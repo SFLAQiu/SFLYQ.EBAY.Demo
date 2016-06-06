@@ -1,0 +1,8 @@
+原来版本：
+https://www.superandcheaper.com.au/_cpanel?item=ebaytmpl&page=preview&empty=on&ebt_id=11&sku=MTable-WH
+
+ebay 原本地址：
+http://vi.vipr.ebaydesc.com/ws/eBayISAPI.dll?ViewItemDescV4&item=310669178784&t=1458611993000&tid=-1&category=116070&seller=superhobbystore&excSoj=1&excTrk=1&lsite=15&ittenable=false&domain=ebay.com.au&descgauge=1
+
+搜索
+http://search.stores.ebay.com.au/search/search.dll?sid=152152822&srchdesc=y&fp=0&query=asdf

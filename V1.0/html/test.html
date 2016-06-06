@@ -1,0 +1,43 @@
+[%EBAY_CROSSSELL SKU:"[@SKU@]" LIMIT:"20" %] [%PARAM *body%]
+<li class="promoitem wrapper-thumbnail">
+    <a href="[@ebay_upsell_url@]" title="[@ebay_title@]" class="promopic">
+        <img src="[@upsell_thumb@]" alt="[@ebay_upsell_title@]" border="0" width="102px" />
+    </a>
+    <br />
+    <a href="[@ebay_upsell_url@]" class="ignr">
+        [%format type:'text' maxlength:'50' rmhtml:'1'%][@ebay_upsell_title@][%END FORMAT%]
+    </a>
+    <br />
+    <span class="price"> $[@upsell_current_price@]</span>
+    <br />
+</li>
+[%END PARAM%] [%END EBAY_CROSSSELL%]
+
+
+[%EBAY_CROSSSELL SKU:"[@SKU@]" LIMIT:"20" %] [%PARAM *body%]
+<div>
+    <div class="good_item">
+        <a href="[@ebay_upsell_url@]" title="[@ebay_title@]"><img src="[@upsell_thumb@]" alt="[@ebay_upsell_title@]"></a>
+        <div class="info">
+            <span class="desc"> 
+                <a href="[@ebay_upsell_url@]">[%format type:'text' maxlength:'50' rmhtml:'1'%][@ebay_upsell_title@][%END FORMAT%]</a>
+            </span>
+            <span class="price">$[@upsell_current_price@]</span>
+        </div>
+    </div>
+</div>
+[%END PARAM%] [%END EBAY_CROSSSELL%]
+
+[%EBAY_upSELL SKU:"[@SKU@]"%] [%PARAM *body%]
+    <div>
+        <div class="good_item">
+            <a href="[@ebay_upsell_url@]" title="[@ebay_title@]"><img src="[@upsell_thumb@]" alt="[@ebay_upsell_title@]"></a>
+            <div class="info">
+                <span class="desc"> 
+                    <a href="[@ebay_upsell_url@]">[%format type:'text' maxlength:'50' rmhtml:'1'%][@ebay_upsell_title@][%END FORMAT%]</a>
+                </span>
+                <span class="price">$[@upsell_current_price@]</span>
+            </div>
+        </div>
+    </div>
+[%END PARAM%] [%END EBAY_upSELL%]

@@ -1,0 +1,495 @@
+<!-- START NETO TEMPLATE -->
+
+<!-- START JAVASCRIPT AND CSS INCLUDES - DO NOT REMOVE -->
+<script language="javascript" type="text/javascript">
+document.Echo=document["standard"+"Write"]==null?document["write"]:document["standard"+"Write"];
+var include=function(path){path="[@config:secure_home_url@]/assets/themes/ebay/js/"+path;document.Echo('<' + 'script src="' + path + '"' +' type="text\/javascript"><' + '\/script>');};
+var includecss=function(path){path="[@config:secure_home_url@]/assets/themes/ebay/css/"+path;document.Echo('<' + 'link hr'+'ef="' + path + '"' +' rel="stylesheet" type="text\/css"><' + '\/link>');};
+</script>
+<script language="javascript" type="text/javascript">includecss("bootstrap.min.css");</script>
+<script language="javascript" type="text/javascript">includecss("grid.css");</script>
+<script language="javascript" type="text/javascript">includecss("override.css");</script>
+<script language="javascript" type="text/javascript">includecss("user-override.css?1657");</script>
+<script language="javascript" type="text/javascript">include("jquery.min.js");</script>
+<script language="javascript" type="text/javascript">include("bootstrap.min.js");</script>
+<script language="javascript" type="text/javascript">include("gallery.js");</script>
+<style>#buynow2-bg-full {width: 970px;height: 200px; background:url('http://superandcheaper.com/ebay/pickup.jpg')}
+.buynow-div1 {display: block;height: 100%;width: 100%;}
+</style>
+<style>
+.tabledetail {
+  width: 920px;height: 100%;border-collapse: separate;border-spacing:25;cellpadding="0";
+}
+.tabledetail td, table th {
+  border: 10px solid #CCCCCC;
+}
+.tabledetail tr:first-child th {
+  border-top: 0;
+}
+.tabledetail tr:last-child td {
+  border-bottom: border: 10px solid #CCCCCC;
+}
+.tabledetail tr td:first-child,
+.tabledetail tr th:first-child {
+  border-left: border: 10px solid #CCCCCC;
+}
+.tabledetail tr td:last-child,
+.tabledetail tr th:last-child {
+  border-right: border: 10px solid #CCCCCC;
+}
+
+</style>
+
+<!-- END JAVASCRIPT AND CSS INCLUDES - DO NOT REMOVE -->
+
+<!-- START NETO TEMPLATE -->
+
+<div class="header-img">
+<div class="container">
+<div class="container-header clearfix">
+
+<!-- START HEADER SECTION -->
+
+	<div class="row">
+		<div class="span12">
+			 <div class="company-logo"><img src="[@config:homeurl@]/assets/website_logo.png" alt="Logo"></div> 
+		</div>
+		
+		<div class="span12">
+        
+			<div class="header-search pull-right">
+
+        <form name="productsearch" class="form-inline pull-right" method="get" action="http://search.stores.ebay.com.au/search/search.dll">
+      <input type="hidden" name="sid" value="152152822"><input type="hidden" name="srchdesc" value="y"><input type="hidden" name="fp" value="0">
+				    <div class="input-append">
+						  <input id="searchId" name="query" type="search" placeholder="Search Our eBay Store"> &nbsp;<button type="submit" value="Search" class="btn btn-primary"><i class="icon-search icon-white">&nbsp;</i></button>
+				    </div>
+				</form>
+
+			</div>  
+            <h6 class="pull-right "><a href="http://stores.ebay.com.au/super-hobby-store?_trksid=p2047675.l2568">Visit our Super and Cheaper eBay Store</a> </h6>     
+		</div>
+	</div>
+  
+  <div class="row">
+	  <div class="navbar span24">
+	    <div class="navbar-inner clearfix">
+	      <ul class="nav">
+           [%EBAY_CATEGORY_MENU id:"[@ebay_store_id@]" ebstore_url:"[@ebstore_url@]"%][%PARAM header%]
+         
+              [%END PARAM%]                
+            [%PARAM *level_1%]
+              <li class="lv1-li [%DATA id:'next_level' if:'ne' value:''%]dropdown-submenu[%END DATA%]"><a href="[@url@]">[@name@]</a>
+              [%DATA id:'next_level' if:'ne' value:''%]
+              	<ul class="dropdown-menu">
+                  [@next_level@]
+                  </ul>
+                [%END DATA%]
+              </li>
+              [%END PARAM%]	
+            [%PARAM *level_2%]
+             <li class="lv2-li [%DATA id:'next_level' if:'ne' value:''%]dropdown-submenu[%END DATA%]"> <a href="[@url@]">[@name@]</a>
+              [%DATA id:'next_level' if:'ne' value:''%]
+              <ul class="lvl3 dropdown-menu">
+                  [@next_level@]
+               </ul>
+               [%END DATA%]
+              </li>
+              
+              [%END PARAM%]		
+              [%PARAM *level_3%]
+              <li class="lv3-li"> <a href="[@url@]">[@name@]</a></li>
+             [%END PARAM%]			
+              [%PARAM footer%]
+            
+          [%END PARAM%][%END EBAY_CATEGORY_MENU%]
+	      </ul>
+	    </div>
+	  </div>
+	</div>
+</div>
+<div class="container">
+<div class="clearfix row" id="main-content">
+<!-- END HEADER SECTION -->
+<!-- START pickup SECTION -->
+<div class="row">
+<div class="span24">
+
+<div id="buynow2-bg-full">
+<a href="https://www.google.com.au/maps/place/110%2F114+Asquith+St,+Silverwater+NSW+2128/@-33.835641,151.034651,18z/data=!3m1!4b1!4m2!3m1!1s0x6b12a34fe84133eb:0xfd524d790d00cc6d" target="_blank" class="buynow-div1"></a>
+
+</div>
+</div>
+</div>
+<!-- end pickup SECTION -->
+
+    <!-- START upsell SECTION -->
+                <div class="row content upsell">
+                    <div class="row">
+                        <div class="details-header">
+                            <h4 class="span24">We also recommend</h4>
+                        </div>
+                    </div>
+
+                    <div class="span24" style="margin:0; width:970px;">
+                        <div class="content-cross-sell" style="padding:0; width:970px;">
+                            <div id="more_items_content" class="boxcontent">
+                                <ul id="carousel-product-like" item="upsell">
+                                    <!-- cross promotion -->
+                                    [%EBAY_upSELL SKU:"[@SKU@]"%] [%PARAM *body%]
+                                    <li class="promoitem wrapper-thumbnail">
+                                        <a href="[@ebay_upsell_url@]" title="[@ebay_title@]" class="promopic">
+                                            <img src="[@upsell_thumb@]" alt="[@ebay_upsell_title@]" border="0" width="102px" />
+                                        </a>
+                                        <br />
+                                        <a href="[@ebay_upsell_url@]" class="ignr">[%format type:'text' maxlength:'50' rmhtml:'1'%][@ebay_upsell_title@][%END FORMAT%]</a>
+                                        <br />
+                                        <span class="price">$[@upsell_current_price@]</span>
+                                        <br />
+                                    </li>
+                                    [%END PARAM%] [%END EBAY_upSELL%]
+                                </ul>
+                            </div>
+                            <div id="more_items" class="boxbase"></div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END upsell SECTION -->
+<!-- START IMAGE SECTION -->
+
+<div class="row">
+<div class="span15">
+<!-- Start Image Gallery Main Image-->
+<div id="main-image">
+<center>
+<img id="pic" name="pic" src="http://www.superandcheaper.com/assets/full/[@SKU@]"/>
+</center>
+</div>
+<!-- End Image Gallery Main Image -->
+
+<!-- Start Image Gallery Thumbnails-->
+<div id="gallery">
+[%DATA id:'image' if:'ne' value:''%]
+	<a href="[@image_full@]"><img src="[@image@]"/></a>
+[%END DATA%] 
+[%DATA id:'thumb_1' if:'ne' value:''%]
+	<a href="[@thumb_full_1@]"><img src="[@thumb_1@]"/></a>
+[%END DATA%] 
+[%DATA id:'thumb_2' if:'ne' value:''%]
+	<a href="http://www.superandcheaper.com/assets/alt_2/
+
+[@SKU@]"><img src="[@thumb_2@]"/></a>
+[%END DATA%] 
+[%DATA id:'thumb_3' if:'ne' value:''%]
+	<a href="http://www.superandcheaper.com/assets/alt_3/
+
+[@SKU@]"><img src="[@thumb_3@]"/></a>
+[%END DATA%]
+[%DATA id:'thumb_4' if:'ne' value:''%]
+	<a href="http://www.superandcheaper.com/assets/alt_4/
+
+[@SKU@]"><img src="[@thumb_4@]"/></a>
+[%END DATA%]
+[%DATA id:'thumb_5' if:'ne' value:''%]
+	<a href="http://www.superandcheaper.com/assets/alt_5/
+
+[@SKU@]"><img src="[@thumb_5@]"/></a>
+[%END DATA%]
+[%DATA id:'thumb_6' if:'ne' value:''%]
+	<a href="http://www.superandcheaper.com/assets/alt_6/
+
+[@SKU@]"><img src="[@thumb_6@]"/></a>
+[%END DATA%]
+[%DATA id:'thumb_7' if:'ne' value:''%]
+	<a href="http://www.superandcheaper.com/assets/alt_7/
+
+[@SKU@]"><img src="[@thumb_7@]"/></a>
+[%END DATA%]
+[%DATA id:'thumb_8' if:'ne' value:''%]
+	<a href="http://www.superandcheaper.com/assets/alt_8/
+
+[@SKU@]"><img src="[@thumb_8@]"/></a>
+[%END DATA%]
+[%DATA id:'thumb_9' if:'ne' value:''%]
+	<a href="http://www.superandcheaper.com/assets/alt_9/
+
+[@SKU@]"><img src="[@thumb_9@]"/></a>
+[%END DATA%]
+[%DATA id:'thumb_10' if:'ne' value:''%]
+	<a href="http://www.superandcheaper.com/assets/alt_10/
+
+[@SKU@]"><img src="[@thumb_10@]"/></a>
+[%END DATA%]
+[%DATA id:'thumb_11' if:'ne' value:''%]
+	<a href="http://www.superandcheaper.com/assets/alt_11/
+
+[@SKU@]"><img src="[@thumb_11@]"/></a>
+[%END DATA%]
+[%DATA id:'thumb_12' if:'ne' value:''%]
+	<a href="http://www.superandcheaper.com/assets/alt_12/
+
+[@SKU@]"><img src="[@thumb_12@]"/></a>
+[%END DATA%]
+[%DATA id:'thumb_13' if:'ne' value:''%]
+	<a href="http://www.superandcheaper.com/assets/alt_13/
+
+[@SKU@]"><img src="[@thumb_13@]"/></a>
+[%END DATA%]
+[%DATA id:'thumb_14' if:'ne' value:''%]
+	<a href="http://www.superandcheaper.com/assets/alt_14/
+
+[@SKU@]"><img src="[@thumb_14@]"/></a>
+[%END DATA%]
+[%DATA id:'thumb_15' if:'ne' value:''%]
+	<a href="http://www.superandcheaper.com/assets/alt_15/
+
+[@SKU@]"><img src="[@thumb_15@]"/></a>
+[%END DATA%]
+
+<div class="clear"></div>
+<!-- End Image Gallery Thumbnails-->
+<br/>
+<!--[[#]]#[%data id:'misc1' if:'ne' value:'' %]#[[#]]-->
+<object height="390" width="640"><param name="movie" value="http://www.youtube.com/v/[@misc1@]?version=3&hl=en_US" /><param name="allowFullScreen" value="true" /><param name="allowscriptaccess" value="always" /><embed allowfullscreen="true" allowscriptaccess="always" height="390" src="http://www.youtube.com/v/[@misc1@]?version=3&hl=en_US" type="application/x-shockwave-flash" width="640"></embed></object> 
+<!--[[#]]#[%end data%]#[[#]]-->
+</div>
+</div>
+
+<div class="span9 pull-right">
+<div class="well well-small">
+        
+               <h4>Shipping Cost Calculator</h4>
+               <p>*Pick-Up Also Available* <a href="#pick-up"><img src="http://superandcheaper.com/ebay/green_round_tick.png" width="15" height="15" /><abbr title="Contact Us For Details">See Details</abbr></a></p>
+                <form class="form-inline">
+                <input class="input-medium" style="padding:4px; height:30px;" placeholder="Enter Post Code" type="text" id="ship_zip"">
+                <button type="button" class="btn"  onclick="
+                [%AJAX_SHIP_CALCULATOR inline:'1' loading_icon_id:'ship_loading' zip_input_id:'ship_zip' element_id:'ship_cost' if_na:'N/A' if_free:'FREE' ebay_list_id:'[@ebay_list_id@]' %]
+                [name] - [@config:moneysign@][cost] <br>
+                [desc]
+                [%END AJAX_SHIP_CALCULATOR%]">Calculate</button>
+                
+                <div id="ship_cost"></div>
+                <div id="ship_loading" style="display:none;position:relative;margin-left:130px;margin-top:-25px;" ><img  src="[@secure_home_url@]/assets/loading.gif"/></div>
+                </form>
+        	
+       			 </div>
+<!--[[#]]#[%data id:'subtitle' if:'ne' value:'' %]#[[#]]-->
+<h3 class="muted">[@subtitle@]</h3>
+<!--[[#]]#[%end data%]#[[#]]-->
+
+<!--[[#]]#[%data id:'description' if:'ne' value:'' %]#[[#]]-->
+<div class="productdetails">[@description@]</div>
+<!--[[#]]#[%end data%]#[[#]]--> 
+
+
+</div>
+</div>
+<!-- END IMAGE SECTION -->
+
+<!-- START DESCRIPTION SECTION -->
+
+<div class="row content">
+    <div class="row">
+        <div class="details-header">
+            <h4 class="span12">Specifications</h4>
+            <h4 class="span11">Packaged Content</h4>
+        </div>
+    </div>
+    
+    <div class="span12">
+    	<div class="content-text">
+   		 [@misc3@]
+         </div>
+    </div>
+    
+    <div class="span12">
+   		<div class="content-text">
+    		[@misc4@]
+        </div>	
+    </div>
+</div>
+
+ [%if [@ebay_description@] ne '' %]
+                <!-- START Features SECTION -->
+                <div class="row content">
+                    <div class="row">
+                        <div class="details-header">
+                            <h4 class="span24">Details Display</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="span24">
+                        <div class="productdetails">
+                            [@ebay_description@]
+                        </div>
+                    </div>
+                </div>
+            [%/if%]
+<!-- END Features SECTION -->
+ <!-- START crosssell SECTION -->
+                <div class="row content crosssell">
+                    <div class="row">
+                        <div class="details-header">
+                            <h4 class="span24">You Might Also Like</h4>
+                        </div>
+                    </div>
+
+                    <div class="span24" style="margin:0; width:970px;">
+                        <div class="content-cross-sell" style="padding:0; width:970px;">
+                            <div id="more_items_content" class="boxcontent">
+                                <ul id="carousel-product" item="crosssell">
+                                    [%EBAY_CROSSSELL SKU:"[@SKU@]" LIMIT:"20" %] [%PARAM *body%]
+                                    <li class="promoitem wrapper-thumbnail">
+                                        <a href="[@ebay_upsell_url@]" title="[@ebay_title@]" class="promopic">
+                                            <img src="[@upsell_thumb@]" alt="[@ebay_upsell_title@]" border="0" width="102px" />
+                                        </a>
+                                        <br />
+                                        <a href="[@ebay_upsell_url@]" class="ignr">
+                                            [%format type:'text' maxlength:'50' rmhtml:'1'%][@ebay_upsell_title@][%END FORMAT%]
+                                        </a>
+                                        <br />
+                                        <span class="price"> $[@upsell_current_price@]</span>
+                                        <br />
+                                    </li>
+                                    [%END PARAM%] [%END EBAY_CROSSSELL%]
+                                </ul>
+                            </div>
+                            <div id="more_items_base" class="boxbase"></div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END crosssell SECTION -->
+
+ 
+
+<div class="row content">
+    <div class="row">
+        <div class="details-header">
+            <h4 class="span12">Payment</h4>
+            <h4 class="span11">Shipping and Postage</h4>
+        </div>
+    </div>
+    <div class="span12">
+    	<div class="content-text">
+    		[%content_zone id:"ebay_payment"%][%end content_zone%]
+    	</div>
+    </div>
+    
+    <div class="span12">
+    	<div class="content-text">
+    		[%content_zone id:"ebay_shipping_v"%][%end content_zone%]
+        </div>
+    </div>
+</div>
+
+<div class="row content">
+    <div class="row">
+        <div class="details-header">
+            <h4 class="span12">Warranty</h4>
+            <h4 class="span11">Terms & Conditions</h4>
+        </div>
+    </div>
+    <div class="span12">
+    	<div class="content-text">
+    		[%content_zone id:"ebay_warranty"%][%end content_zone%]
+        </div>
+    </div>
+    
+    <div class="span12">
+    	<div class="content-text">
+    		[%content_zone id:"ebay_terms_conditions"%][%end content_zone%]
+    	</div>
+    </div>
+</div>
+
+<!-- END DESCRIPTION SECTION -->
+
+<!-- START FOOTER SECTION -->
+
+<div class="row">
+<div class="footer">
+
+    <div class="span24 links">
+    <ul>
+    	<li><h4><a href="http://stores.ebay.com.au/super-hobby-store/FAQ.html" target="_blank">FAQ</a></h4></li>
+        <li><h4><a href="http://stores.ebay.com.au/super-hobby-store/PAYMENT.html" target="_blank">Payment</a></h4></li>
+        <li><h4><a href="http://stores.ebay.com.au/super-hobby-store/STORE-POLICY.html" target="_blank">Store Policy</a></h4></li>
+        <li><h4><a href="http://stores.ebay.com.au/super-hobby-store/ABOUT-US.html" target="_blank">About Us</a></h4></li>
+        <li><h4><a href="http://stores.ebay.com.au/super-hobby-store/CONTACT-US.html" target="_blank">Contact Us</a></h4></li>
+    </ul>
+    </div>
+
+</div>
+</div>
+<!-- END FOOTER SECTION -->
+
+</div>
+</div>
+</div></div>
+<script language="javascript" type="text/javascript">
+    include("jquery.jcarousel.min.js");
+
+</script>
+<script type="text/javascript">
+    (function(){
+        function removeSameProduct(lis){
+            var items=$(lis);
+            if(!items)return;
+            items.each(function(index){
+                var itemJq=items.eq(index);
+                var alt=itemJq.find("img").attr("alt");
+                var imgItems=items.find('img[alt="'+alt+'"]');
+                if(imgItems.length>1){
+                    var liImtes=imgItems.parents("li");
+                    var maxPrice=0;
+                    var maxItemLi=null;
+                    liImtes.each(function(i){
+                        var itemLi=liImtes.eq(i);
+                        var priceStr= liImtes.eq(i).find(".price").html();
+                        var price=parseFloat(priceStr.trim().substring(1));
+                        if(maxPrice<=0 || price>maxPrice){
+                            maxPrice=price;
+                            if(maxItemLi)maxItemLi.remove();
+                            maxItemLi=itemLi;
+                            return;
+                        }else{
+                            itemLi.remove()
+                        }
+                    });
+                }
+            });
+        }
+        
+        function removeItem(productBox){
+            var products=$(productBox).find("li ");
+            if(!products || products.length<=0){
+                var contentJq=$(productBox).parents(".content");
+                contentJq.remove();
+            }
+        }
+        removeItem("#carousel-product");
+        removeItem("#carousel-product-like");
+        removeSameProduct("#carousel-product li");
+        removeSameProduct("#carousel-product-like li");
+        
+        
+    })();
+    jQuery('#carousel-product').jcarousel({
+            auto: 4,
+            wrap: 'circular',
+            scroll: 1,
+            //size: 9,
+        });
+    jQuery('#carousel-product-like').jcarousel({
+        auto: 4,
+        wrap: 'circular',
+        scroll: 1,
+        //size: 9,
+    });
+
+</script>
+<!-- END NETO TEMPLATE -->
