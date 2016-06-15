@@ -6,3 +6,14 @@ http://vi.vipr.ebaydesc.com/ws/eBayISAPI.dll?ViewItemDescV4&item=310669178784&t=
 
 搜索
 http://search.stores.ebay.com.au/search/search.dll?sid=152152822&srchdesc=y&fp=0&query=asdf
+
+<!--
+    <script type="text/javascript" src="/assets/themes/ebay/style/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/themes/ebay/style/js/jquery.imagezoom.js"></script>
+    <script type="text/javascript" src="/assets/themes/ebay/style/js/slick.js"></script>
+    <script type="text/javascript" src="/assets/themes/ebay/style/js/home.js"></script>
+-->
+
+
+
+http://www.ebay.com.au/itm/Vitality-FT007-2-4G-High-Speed-4-ch-RC-Racing-Boat-/400870260370?hash=item5d55babe92

