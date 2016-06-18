@@ -54,22 +54,7 @@
         contents: $(".nav .nav_content")
     });
     top_ts.doSwitch();
-    //轮播
-    $('.data').slick({
-        dots: false,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 4,
-        slidesToScroll: 4
-    });
-
-    $(".lv1-box li").mouseenter(function () {
-        var item = $(this);
-        item.children(".dropdown-menu").show();
-    }).mouseleave(function () {
-        var item = $(this);
-        item.children(".dropdown-menu").hide();
-    });
+  
     //去除价格重复
     (function () {
         function removeSameProduct(lis) {
@@ -80,7 +65,7 @@
                 var alt = itemJq.find("img").attr("alt");
                 var imgItems = items.find('img[alt="' + alt + '"]');
                 if (imgItems.length > 1) {
-                    var liImtes = imgItems.parents("li");
+                    var liImtes = imgItems.parents(".good_item");
                     var maxPrice = 0;
                     var maxItemLi = null;
                     liImtes.each(function (i) {
@@ -89,29 +74,28 @@
                         var price = parseFloat(priceStr.trim().substring(1));
                         if (maxPrice <= 0 || price > maxPrice) {
                             maxPrice = price;
-                            if (maxItemLi) maxItemLi.remove();
+                            if (maxItemLi) maxItemLi.parent().remove();
                             maxItemLi = itemLi;
                             return;
                         } else {
-                            itemLi.remove()
+                            itemLi.parent().remove()
                         }
                     });
                 }
             });
         }
-
-        function removeItem(productBox) {
-            var products = $(productBox).find(".good_item");
-            if (!products || products.length <= 0) {
-                var contentJq = $(productBox).parents(".also_like");
-                contentJq.remove();
-            }
-        }
-        removeItem("#carousel-product");
-        removeItem("#carousel-product2");
-        removeSameProduct("#carousel-product li");
-        removeSameProduct("#carousel-product2 li");
+        removeSameProduct("#carousel-product .good_item");
+        removeSameProduct("#carousel-product2 .good_item");
     })();
+
+    //轮播
+    $('.data').slick({
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 4,
+        slidesToScroll: 4
+    });
     //导航
     $(".lv1-box li").mouseenter(function () {
         var item = $(this);
