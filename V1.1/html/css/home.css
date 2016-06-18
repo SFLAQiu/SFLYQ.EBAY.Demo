@@ -899,7 +899,6 @@ input::-webkit-input-placeholder{text-align: center;} */
 .message .detail .message-content{
     overflow: hidden;
 }
-
 .detail p{
     text-align: left;
 }
@@ -932,4 +931,27 @@ input::-webkit-input-placeholder{text-align: center;} */
 .detail .more a{
     color: #f53532;
 }
-
+.tabledetail {
+  width: 920px;
+  height: 100%;
+  border-collapse: separate;
+  border-spacing:25;
+  padding: "0";
+}
+.tabledetail td, table th {
+  border:10px solid #CCCCCC;
+}
+.tabledetail tr:first-child th {
+  border-top: 0;
+}
+.tabledetail tr:last-child td {
+  border-bottom: 10px solid #CCCCCC;
+}
+.tabledetail tr td:first-child,
+.tabledetail tr th:first-child {
+  border-left:  10px solid #CCCCCC;
+}
+.tabledetail tr td:last-child,
+.tabledetail tr th:last-child {
+  border-right: 10px solid #CCCCCC;
+}
