@@ -961,3 +961,22 @@ input::-webkit-input-placeholder{text-align: center;} */
 .tabledetail tr th:last-child {
   border-right: 10px solid #CCCCCC;
 }
+
+/*buy now*/
+.buynow-bg {
+    width: 350px;
+    height: 116px;
+    background: url('http://superandcheaper.com/ebay/buynow-notfree.jpg') no-repeat;
+    position: relative;
+    margin-bottom: 15px;
+}
+.buynow-bg .buynow-price{
+    position: absolute;
+    color: #FE1801;
+    left: 3px;
+    top: 68px;
+    font-size: 19px;
+    font-weight: bolder;
+    width: 190px;
+    text-align: center;
+}
