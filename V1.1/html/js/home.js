@@ -84,15 +84,6 @@
                 }
             });
         }
-        function removeItem(productBox) {
-            var products = $(productBox).find(".good_item");
-            if (!products || products.length <= 0) {
-                var contentJq = $(productBox).parents(".also_like");
-                contentJq.remove();
-            }
-        }
-        removeItem("#carousel-product");
-        removeItem("#carousel-product2");
         removeSameProduct("#carousel-product .good_item");
         removeSameProduct("#carousel-product2 .good_item");
     })();
