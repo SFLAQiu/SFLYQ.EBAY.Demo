@@ -150,6 +150,15 @@
             $(".jqzoom").attr('src', $(this).find("img").attr("mid"));
             $(".jqzoom").attr('rel', $(this).find("img").attr("big"));
         }).eq(0).click();
+
+        //guide
+        var guide=$("#guide");
+        if(typeof(ebayItemID)=="undefined")ebayItemID=null;
+        if(guide && ebayItemID){
+            guide.find(".tell-friend").attr("href",("http://contact.ebay.com.au/ws1/eBayISAPI.dll?ShowEmailAuctionToFriend&item="+ebayItemID));
+            guide.find(".watch-item").attr("href",("http://cgi1.ebay.com.au/ws/eBayISAPI.dll?MakeTrack&item="+ebayItemID));
+        }
+
     });
     //回车查询 
     $("#ship_zip").keydown(function(even) {
@@ -157,5 +166,7 @@
         if (e && e.keyCode == 13)  $("#ship_btn").click();
     });
 
+    
+    
 
 })();
