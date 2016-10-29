@@ -1,0 +1,359 @@
+body{
+    background-color: #ededed;
+}
+.top_ad{
+     background-color: #ededed;
+}
+.top-info{
+    background-color: #fff;
+}
+.top{
+    background-color: #fff;
+}
+.nav{
+    margin-top:0px;
+    padding-top: 10px;
+    background-color: #fff;
+    box-shadow: 0px 5px 12px #C0C3C5;
+}
+/*顶部广告*/
+.top_ad .ad_left{
+    float: left;
+    width: 800px;
+    height: 300px;
+}
+.top_ad .ad_right{
+    float: right;
+    width: 280px;
+    height: 300px;
+}
+.test-red{
+    border: 1px solid red;
+}
+
+
+/*引导模块*/
+.lead{
+    margin-bottom: 10px;
+}
+.lead .main{
+    height: 510px;
+    position: relative;
+}
+.lead .main .left{
+    position: relative;
+    height: 510px;
+    width: 270px;
+
+}
+.lead .hobby-toy{
+    border: 2px solid #0096d2;
+}
+.lead .hobby-toy .left{
+    background-image: url('http://demo.thankbabe.com/ebay/v1/image/hobby-toy.jpg');
+    background-color: #0096d2;
+}
+
+.lead .sport-outdoor{
+    border: 2px solid #2cb53f;
+}
+.lead .sport-outdoor .left{
+    background-image: url('http://demo.thankbabe.com/ebay/v1/image/sport-outdoor.jpg');
+    background-color: #2cb53f;
+
+}
+
+.lead .hode-garden{
+    border: 2px solid #fc7802;
+}
+.lead .hode-garden .left{
+    background-image: url('http://demo.thankbabe.com/ebay/v1/image/hode-garden.jpg');
+    background-color: #fc7802;
+    border: 1px solid #fc7802;
+}
+
+
+
+.lead .main .left .title{
+    color: #f4f4f4;
+    font-weight: bold;
+    font-size: 18px;
+    position: absolute;
+    top: 20px;
+    left: 18px;
+}
+
+.lead .main .left .list{
+    position: absolute;
+    font-size:14px;
+    top: 50px;
+}
+.lead .main .left .list li{
+    float:  left;
+    height: 29px;
+    width: 116px;
+    line-height: 29px;
+    text-align: center;
+    margin-left:10px;
+    margin-bottom: 5px;
+}
+
+.lead .main .left .blue li{
+    background-color: #3baedc;
+}
+
+.lead .main .left .green li{
+    background-color: #5cc66b;
+}
+
+.lead .main .left .orange li{
+    background-color: #fb963c;
+}
+
+.lead .main .left .list a{
+  color: #f4f4f4;
+}
+.lead .main .left .all{
+    width: 238px;
+    height: 38px;
+    font-size:14px;
+    line-height: 38px;
+    background-color: rgba(19, 110, 146, 0.6);
+    position: absolute;
+    top: 170px;
+    left: 10px;
+    text-align: center;
+}
+
+.lead .main .left .all a{
+    color: #f4f4f4;
+}
+.lead .main .right{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 850px;
+    background-color: #fff;
+    height: 510px;
+}
+.lead .main .right .all span{
+    float: left;
+}
+
+.lead .main .right .all{
+    position: absolute;
+    right: 25px;
+    bottom: 15px;
+    font-size: 14px;
+}
+
+.lead .main .right .product .info{
+    width: 200px;
+    height:230px; 
+    /*border: 1px solid red;*/
+    float: left;
+    margin-left: 5px;
+    margin-top: 12px;
+}
+
+.lead .main .right .product .image{
+    width: 164px;
+    height: 105px;
+    margin-top: 25px;
+}
+.lead .main .right .product .title{
+    height: 19px;
+    margin: 10px 0px 0px 0px;
+    font-size: 14px;
+    color: #3c3c3c;
+    font-family: 微软雅黑;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.lead .main .right .product .shop{
+    font-size: 14px;
+    font-family: 微软雅黑;
+    height: 35px;
+    width: 170px;
+    line-height: 35px;
+    margin: 10px auto 0px auto;
+    font-weight: bold;
+ 
+}
+
+
+.lead .main .right .arrow-down{
+    width: 0px;
+    height: 0px;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    font-size: 0px;
+    line-height: 0px;
+    margin-left: 2px;
+    margin-top: 5px;
+}
+
+.hobby-toy-right .product .shop{
+    border: 1px solid #0096d2;
+}
+.hobby-toy-right .info .shop a{
+    color: #0096d2;
+}
+.hobby-toy-right .arrow-down{
+    border-left: 8px solid #0096d2;
+}
+.hobby-toy-right .arrow-down{
+    border-left: 8px solid #0096d2;
+}
+
+
+.sport-outdoor-right .product .shop{
+    border: 1px solid #2bb53f;
+}
+.sport-outdoor-right .info .shop a{
+    color: #2bb53f;
+}
+.sport-outdoor-right  .arrow-down{
+    border-left: 8px solid #2bb53f;
+}
+
+.hode-garden-right .product .shop{
+    border: 1px solid #f97600;
+}
+.hode-garden-right .info .shop a{
+    color: #f97600;
+}
+.hode-garden-right  .arrow-down{
+    border-left: 8px solid #f97600;
+}
+
+/*popular 受欢迎*/
+.popular{
+    background-color: #fff;
+}
+.popular .main{
+     height: 380px;
+     padding-top: 10px;
+}
+.popular .desc{
+    font-size: 24px;
+    color: #9f9f9f;
+    text-align: left;
+    margin: 0px 0px 20px 0px;
+}
+.popular .desc .image{
+    float: left;
+    height: 30px;
+    width: 30px;
+}
+.popular .pitem{
+    width: 198px;
+    height: 315px;
+    /*border: 1px solid red;*/
+    float: left;
+    margin-right: 29px;
+}
+.popular .pitem .title{
+    color: #898989;
+    text-align: left;
+    font-size: 12px;
+    height: 32px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    margin:  10px 0px 10px 0px;
+}
+.popular .pitem .price{
+    color: #f65350;
+    font-size: 24px;
+}
+.popular .pitem .buynow{
+    font-size: 14px;
+    background-color: #f75350;
+    width: 107px;
+    height: 28px;
+    line-height: 28px;
+    margin: 0px auto;
+    margin-top: 15px;
+    border-radius:3px;
+}
+.popular .pitem .buynow a{
+    color: #ffffff;
+}
+.popular .pitem .image{
+    height: 170px;
+    width: 170px;
+    
+}
+.popular .pitem.end{
+    margin-right: 0px;
+}
+
+/*底部*/
+.foot .main{
+    height: 120px;
+    position: relative;
+}
+.foot .main .platform{
+    float: left;
+    height: 71px;
+    line-height: 71px;
+    margin-top:20px;
+}
+.foot .main .platform img{
+    margin-right: 5px;
+}
+
+.foot .main .platform .paypal img{
+    width: 60px;
+    height: 37px;
+    margin-top: 20px;
+}
+.foot .main .platform .master img{
+    width: 61px;
+    height: 40px;
+    margin-top: 20px;
+}
+.foot .main .platform .visa img{
+    width: 60px;
+    height: 37px;
+    margin-top: 20px;
+}
+
+.foot .main .platform .amdd img{
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+}
+
+.foot .main .platform .paypal-v img{
+    width: 71px;
+    height: 71px;
+}
+
+.foot .main .link{
+    position: absolute;
+    right: 0px;
+    width: 550px;
+    font-size: 14px;
+    margin-top: 25px;
+}
+
+.foot .main .link a{
+    margin-left: 20px;
+    color: #505050;
+}
+
+.foot .main .declare{
+    position: absolute;
+    bottom: 20px;
+    font-size: 14px;
+    margin-top: 25px;
+    right: 20px;
+}
+
+.foot .main .declare a{
+    color: #505050;
+}
